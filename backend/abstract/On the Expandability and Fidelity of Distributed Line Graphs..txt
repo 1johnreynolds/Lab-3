@@ -1,0 +1,5 @@
+The design of maintenance mechanisms of distributed hash tables (DHTs) is usually specific to their initial graphs, and thus it is complicated and error-prone. Zhang and Liu propose in [4j the “distributed line graphs” (DLG) mechanism, a universal technique for designing DHTs based on arbitrary regular graphs while preserving the main features of the initial graphs. However, two important properties of DLG, the expandability and fidelity, have not been studied with detailed explanations or analysis. In this paper, we study the above properties of DLG transformations, and prove that (i) the DLG transformations are incrementally expandable, and (ii) DLG transformations from G
+<sub>i</sub>
+ to G
+<sub>i+1</sub>
+ keep fidelity.

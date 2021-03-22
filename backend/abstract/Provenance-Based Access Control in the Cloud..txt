@@ -1,0 +1,1 @@
+This paper describes a provenance-based access control system for the cloud. The system combines both provenance and access-control models together with a rule-based mechanism. The system allows rule propagation (in the cloud) and a central execution engine for enforcing security and trustworthiness.

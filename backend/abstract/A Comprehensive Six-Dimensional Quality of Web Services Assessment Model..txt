@@ -1,0 +1,1 @@
+We propose a six dimensional QoWS model including expected QoWS, agreed QoWS, delivered QoWS, perceived QoWS, transmitted QoWS, and statistic QoWS to assess quality of Web services comprehensively and objectively. Meanwhile, the proposed assessment mechanism evaluates Web services from the view of compliance, end-to-end performance, and long-term performance.

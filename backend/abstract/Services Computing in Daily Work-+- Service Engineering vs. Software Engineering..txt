@@ -1,0 +1,1 @@
+Today, more and more software are augmented with service-oriented packaging. At the same time, more and more business and government services are provided and offered in the form of software. However, there are debates on whether and how much service engineering has in common with software engineering.

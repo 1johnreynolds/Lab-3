@@ -1,0 +1,1 @@
+By defining workflows, existing services are put into novel contexts and exposed to different workloads, which in turn can result in unexpected behaviors. This paper examines the chaotic behavior of sequential workflows in overload situations and discusses the use of call-contexts as a means of avoiding them.

@@ -1,0 +1,1 @@
+This paper proposes an approach for cross-domain connectivity that enables domain autonomy and that preserves across domains properties that are taken for granted by services within a domain.

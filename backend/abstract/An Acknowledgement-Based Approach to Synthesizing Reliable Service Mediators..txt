@@ -1,0 +1,1 @@
+In this paper, we characterize the problem of how to synthesize a reliable service mediator that can guarantee reliable interaction of the mediated Web services. We first present formal models of reliable protocols for Web services and service mediators. Then, we introduce an algorithm for synthesizing reliable service mediators.

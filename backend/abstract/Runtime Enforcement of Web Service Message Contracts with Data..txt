@@ -1,0 +1,7 @@
+An increasing number of popular SOAP web services exhibit a stateful behavior, where a successful interaction is determined as much by the correct format of messages as by the sequence in which they are exchanged with a client. The set of such constraints forms a “message contract” that needs to be enforced on both sides of the transaction; it often includes constraints referring to actual data elements inside messages. We present an algorithm for the runtime monitoring of such message contracts with data parameterization. Their properties are expressed in LTL-FO
+<sup>+</sup>
+, an extension of Linear Temporal Logic that allows first-order quantification over the data inside a trace of XML messages. An implementation of this algorithm can transparently enforce an LTL-FO
+<sup>+</sup>
+ specification using a small and invisible Java applet. Violations of the specification are reported on-the-fly and prevent erroneous or out-of-sequence XML messages from being exchanged. Experiments on commercial web services from Amazon.com and Google indicate that LTL-FO
+<sup>+</sup>
+ is an appropriate language for expressing their message contracts, and that its processing overhead on sample traces is acceptable both for client-side and server-side enforcement architectures.

@@ -1,0 +1,1 @@
+This paper presents the results of a brief survey of tools for increasing the level of automation of service composition. Our main emphasis in this paper is on tools for building compound services. Tools for both non-semantic and semantic services are considered.

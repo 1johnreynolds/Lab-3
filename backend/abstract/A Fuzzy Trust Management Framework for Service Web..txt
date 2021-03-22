@@ -1,0 +1,1 @@
+We propose a fuzzy trust management framework for the Service Web. The proposed framework supports a natural way of representing and querying consumers' perception on services. We describe the underlying models, algorithms and an implementation architecture, mainly focusing on the key features and contributions of the proposed framework.

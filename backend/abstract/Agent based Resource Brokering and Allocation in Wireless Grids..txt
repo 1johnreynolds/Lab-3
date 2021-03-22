@@ -1,0 +1,1 @@
+This paper presents an agent based model for discovery, brokering and allocation of cost effective resources to computational jobs. A wireless grid environment of virtual organizations is considered. Agents are employed to perform resource brokering and allocation tasks. The model is simulated for different wireless grid scenarios, to test its operational effectiveness

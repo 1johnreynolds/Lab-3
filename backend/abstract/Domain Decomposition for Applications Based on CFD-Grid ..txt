@@ -1,0 +1,1 @@
+Domain decomposition (D-D) is a key element for most computational fluid dynamics (CFD) parallel computing. For load balancing of computer nodes, the difference between computer nodes is considered in D-D. A domain decomposition service is now provided on a CFD-Grid. This service can also be embedded in other applications based on the CFD-Grid.

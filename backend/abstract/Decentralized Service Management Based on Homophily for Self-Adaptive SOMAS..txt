@@ -1,0 +1,1 @@
+Humans create efficient social structures in a self-organized way based on a feature called homophily. This paper proposes the use of homophily in Service-Oriented Multiagent Systems to create efficient self-organized structures and provide a decentralized service management.

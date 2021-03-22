@@ -1,0 +1,5 @@
+Automated physical resource management of large-scale Internet Technology (IT) systems requires dynamic configuration of both application-level and system-level parameters. The existence of large number of tunable parameters makes it difficult to design a feedback controller that adjusts these parameters effectively in order to achieve application-level performance targets. In this paper, we introduce a new approach for simplified control architecture of large-scale IT systems based on dimension reduction techniques. It combines online selection of critical control knobs through LASSO-a powerful L
+<sub>1</sub>
+-constrained fitting method/Compressive Sensing (CS)-a L
+<sub>1</sub>
+-optimization method, and adaptive control of the identified knobs. The latter relies on the online estimation of the input-output model with the selected control knobs using the recursive least square (RLS) method and a self-tuning linear quadratic (LQ) optimal controller for output regulation. The results of both a numerical simulation in Matlab and a realistic case are presented to demonstrate the effectiveness of our approach.

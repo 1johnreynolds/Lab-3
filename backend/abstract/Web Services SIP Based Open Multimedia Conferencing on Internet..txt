@@ -1,0 +1,1 @@
+In this paper, we introduce the session initiation protocol (SIP) based multimedia conferencing on Internet, and mainly focus on the design and implementation for conferencing communication services model, such as SIP connection, session management, media control conferencing management, also we provide a prototype. Finally, we give the conclusions.

@@ -1,0 +1,1 @@
+Remote desktop protocol (RDP) allows a client to communicate with a Windows server. With RDP, you can run applications on a server from a remote client. RDP uses authentication and encryption to prevent traffic from leak. But the methods used have vulnerabilities and may encounter attacks. A security-enhanced approach is proposed and implemented.

@@ -1,0 +1,1 @@
+Presents corrections to author affiliation information in the paper, “Guest Editor’s Introduction: Special Section on Virtualization and Services for Cloud-Based Application Systems,” (Zhange, Y. et al), IEEE Trans. Serv. Comput., vol. 12, no. 1, pp. 88–90, Jan./Feb. 2019.

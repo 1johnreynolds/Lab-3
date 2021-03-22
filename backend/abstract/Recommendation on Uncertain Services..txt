@@ -1,0 +1,1 @@
+In this paper, we propose a time-sensitive probability skyline (TPS) approach to recommend services with uncertainty. We project services to n-dimensional data space and recommend services in TPS. Experimental evaluation on real data shows the great performance of TPS in service recommendation by comparing the experiment result with results of other approaches.

@@ -1,0 +1,1 @@
+Context aware services are the next generation of the service computing paradigm. In this paper we explore a case study of creating context-aware services for the telecommunications industry

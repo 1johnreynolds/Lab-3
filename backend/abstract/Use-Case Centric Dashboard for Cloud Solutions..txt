@@ -1,0 +1,1 @@
+We design a framework for solution validation and couple it with the ability for VM and elasticity management. We implement our design in the form of a "dashboard which captures all elements of a comprehensive cloud solution management framework. We illustrate the applicability of the dashboard with a cloud solution we have developed.

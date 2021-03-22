@@ -1,0 +1,1 @@
+This talk will share with the technical community on some directions of Services Research at IBM.

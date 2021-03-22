@@ -1,0 +1,1 @@
+The articles in this special section focus on emerging Web Services. The papers address the latest advances in Web Services selection, discovery and recommendation. These advances consider context awareness, quality of service, quality of experience, service usage history and evolution, and cost effectiveness.

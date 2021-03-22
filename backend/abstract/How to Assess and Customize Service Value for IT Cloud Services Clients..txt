@@ -1,0 +1,1 @@
+This article describes our novel methodology to ascertain the IT Cloud customer's perceived service value in terms of non-functional requirements and our experience applying this methodology to clients using a Virtual Desktop Service running on an IT Cloud.

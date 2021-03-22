@@ -1,0 +1,1 @@
+This paper describes the research conducted to develop Nedgty, the open source Web services firewall. Nedgty secures Web services by applying business specific rules in a centralized manner. It has the ability to secure Web services against denial of service, buffer overflow, and XML denial of service attacks; as well as having an authorization mechanism.

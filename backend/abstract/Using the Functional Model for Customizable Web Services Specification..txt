@@ -1,0 +1,1 @@
+We present in this paper a functional model based framework for customizable Web services description, discovery and composition. Web services are described here at a high level abstraction and can be seen as "black boxes" labeled by their names and input/output parameters. Complementary to this formalism, we defined a set of mechanisms for Web services discovery and composition.

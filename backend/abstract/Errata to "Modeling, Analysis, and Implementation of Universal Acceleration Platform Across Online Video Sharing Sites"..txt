@@ -1,0 +1,1 @@
+Presents corrections to the paper, “Modeling, analysis, and implementation of universal acceleration platform across online video sharing sites,” (Xu, K. et al), IEEE Trans. Serv. Comput., vol. 11, no. 3, pp. 534–548, May/Jun. 2018.

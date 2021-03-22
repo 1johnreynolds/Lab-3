@@ -1,0 +1,1 @@
+In this paper, we report on a client-side framework that allows applications to consume Web services that adhere to the callback pattern in the context of network security schemes. This framework supports extensions of the callback pattern such as the one-request-multiple-response pattern, also allows the applications to consume the callback results in a flexible way.

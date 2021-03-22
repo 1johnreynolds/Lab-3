@@ -1,0 +1,1 @@
+This article demonstrates how to build a globalSOA infrastructure, using a step by step approach and Design Patterns. The proposed architecture results in a minimalistic use of the SOA concepts and a novel solution for SOA management and governance which goes beyond current vendor products.

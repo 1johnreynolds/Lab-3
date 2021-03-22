@@ -1,0 +1,19 @@
+In recent years, the issues in web service security have been widely investigated and various security standards have been proposed. But most of these studies and standards focus on the access control policies for individual web services and do not consider the access issues in composed services. Consider a simple service chain where service s
+<sub>1</sub>
+ accesses s
+<sub>2</sub>
+, and s
+<sub>2</sub>
+, in turn, accesses service s
+<sub>3</sub>
+. The information returned from s
+<sub>3</sub>
+ to s
+<sub>2</sub>
+ may be used to compute some results that are further returned to s
+<sub>1</sub>
+. The current web service security framework does not provide any mechanisms to control such an information flow, and hence, sensitive information may be leaked to s
+<sub>1</sub>
+ without the consensus of s
+<sub>3</sub>
+. In this paper, we propose an enhanced security model to facilitate the control of information flow through service chains. It extends the basic security models by introducing the concepts of delegation and pass-on. Based on these concepts, new certificates, certificate chain, delegation and pass-on policies, and how they are used to control the information flow are discussed.

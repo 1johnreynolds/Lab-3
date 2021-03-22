@@ -1,0 +1,7 @@
+In Service-Oriented Architecture, each application is often designed as a set of abstract services, which defines its functions. A concrete service(s) is selected at runtime for each abstract service to fulfill its function. Since different concrete services may operate at different quality of service (QoS) measures, application developers are required to select an appropriate set of concrete services that satisfies a given Service-Level Agreement (SLA) when a number of concrete services are available for each abstract service. This problem, the QoS-aware service composition problem, is known NP-hard, which takes a significant amount of time and costs to find optimal solutions (optimal combinations of concrete services) from a huge number of possible solutions. This paper proposes an optimization framework, called E
+<sup>3</sup>
+, to address the issue. By leveraging a multiobjective genetic algorithm, E
+<sup>3</sup>
+ heuristically solves the QoS-aware service composition problem in a reasonably short time. The algorithm E
+<sup>3</sup>
+ proposes can consider multiple SLAs simultaneously and produce a set of Pareto solutions, which have the equivalent quality to satisfy multiple SLAs.

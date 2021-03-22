@@ -1,0 +1,1 @@
+In this paper, we propose an approach to select top-k cloud services. Our approach combines the trust, determined by the reputation of the provider, and the QoS. We present different algorithms for processing such selection queries and evaluate them through a set of experiments.

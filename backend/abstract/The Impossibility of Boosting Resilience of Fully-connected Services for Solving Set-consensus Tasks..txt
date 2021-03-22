@@ -1,0 +1,1 @@
+This paper explores whether (n-2)-resilient services and reliable registers can wait-free solve (n, n-1)-consensus. It has already been shown to be feasible if arbitrary connection is allowed, while we prove that it's impossible otherwise.

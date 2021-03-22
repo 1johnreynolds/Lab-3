@@ -1,0 +1,1 @@
+Service process usually needs to be changed during reuse because of the change of context. These change mapping relations provide additional information to help users customize service processes. In this paper, we present a mining approach to mining process change sequences based on different context and finding the best sequence to tailor the base process.

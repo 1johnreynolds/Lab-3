@@ -1,0 +1,1 @@
+In this paper, we introduce a novel concept called collective skyline to deal with the problem of multiple users preferences. We then conduct a set of experiments that demonstrate the effectiveness of the introduced concept.

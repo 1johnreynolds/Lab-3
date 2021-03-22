@@ -1,0 +1,3 @@
+We report on a novel approach to (semi-)automatically compile and verify contract-regulated service compositions. We specify Web services and the contracts governing them as WSBPEL behaviours. We compile WSBPEL behaviours into the specialised system description language ISPL, to be used with the model checker MCMAS to verify behaviours automatically. We use the formalism of temporal-epistemic logic suitably extended to deal with compliance/violations of contracts. We illustrate these concepts using a motivating example whose state space is approximately 10
+<sup>6</sup>
+ and discuss experimental results.

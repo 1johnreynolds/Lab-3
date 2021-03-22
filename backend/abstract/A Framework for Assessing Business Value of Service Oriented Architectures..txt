@@ -1,0 +1,1 @@
+This paper presents a framework used for analyzing decisions regarding implementations of service oriented architectures. The framework assesses the business value of SOA by measuring the modification cost, i.e. the effort needed to become service oriented, and the benefits that can be gained for an enterprise using SOA.

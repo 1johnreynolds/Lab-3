@@ -1,0 +1,1 @@
+It is a common experience while Web searching that one gets to see pages that are not of interest. Partly these are due to a word or words in the search query having different contexts, the user obviously expecting to find pages related to the context of interest. This paper proposes a method for disambiguating contexts in Web search results.

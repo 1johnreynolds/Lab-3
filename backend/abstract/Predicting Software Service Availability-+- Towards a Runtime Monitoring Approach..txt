@@ -1,0 +1,1 @@
+This paper presents a prediction model for software services availability measured by the mean-time-to-repair (MTTR) and mean-time-to-failure (MTTF) of a service. The prediction model is based on the experimental identification of probabilistic prediction for variables that affect MTTR/MTTF, based on monitoring service data collected at runtime.

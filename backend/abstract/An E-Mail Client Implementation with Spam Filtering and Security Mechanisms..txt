@@ -1,0 +1,1 @@
+Two main goals of our e-mail client system are filtering out junk e-mails and blocking e-mail sent out by malicious code. The famous Ling-Spam Corpus was experimented to show the good performance of our system. Moreover, our system can prevent malicious code impersonating SMTP to send out infected e-mail or secrecy of the computer system.

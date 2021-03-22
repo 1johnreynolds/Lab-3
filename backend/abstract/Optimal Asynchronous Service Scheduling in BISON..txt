@@ -1,0 +1,1 @@
+In this paper, we present some of our experiences from the architectural design phase of business information analysis service provisioning system, BISON. More specifically we discuss the issues, challenges, and our solution approaches to asynchronously scheduling the service requests in an optimal manner to enhance the user experience in the system

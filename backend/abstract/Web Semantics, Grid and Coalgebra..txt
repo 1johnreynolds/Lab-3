@@ -1,0 +1,1 @@
+We present two phenomenon Web semantics and grid computation. These two concepts could be seen as some state transition system and could use coalgebra concept to unify the two concepts and get their final objects.

@@ -1,0 +1,1 @@
+WSDL-S and OWL-S are semantic Web services languages that both aim at enriching WSDL with semantic annotation. In this paper, we analyze the similarities and differences between the two languages aiming at showing how OWL-S annotations could take advantage of WSDL-S annotations. In the process, we discover and analyze representational trade-offs between the two languages

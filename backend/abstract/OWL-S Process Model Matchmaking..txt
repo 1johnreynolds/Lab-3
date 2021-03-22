@@ -1,0 +1,1 @@
+In this paper, we propose an approach for approximate matching of OWL-S process model. We also propose a similarity measure that captures structural and semantic differences between two process models. To do so, we reduce the process matching to a graph matching problem and we adapt existing algorithms for this purpose.

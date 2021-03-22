@@ -1,0 +1,1 @@
+In this paper, we propose a novel framework WSCRec, in which historical information (i.e., execution logs) are utilized to facilitate the process of Web service composition. According to the execution logs of composite services, appropriate services which have been proved to be more reliable and robust and have higher probability to fulfill users' demands are located.

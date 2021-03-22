@@ -1,0 +1,1 @@
+We analyze a scientific protocol developed to support a service devoted to alternative splicing analysis. We explain the process of selection of resources to implement each scientific task and present a methodology for scientific tools analysis and benchmarking to produce sound and efficient scientific protocols.

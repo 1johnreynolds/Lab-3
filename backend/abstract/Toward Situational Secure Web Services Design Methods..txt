@@ -1,0 +1,1 @@
+SWSD practices cannot be defined independently of the situation in which they are applied. To address this challenge, we propose an approach for guiding the construction and execution of situational SWSD methods by reusing and integrating different existing SWSD method components suited to the specific situation on hand.

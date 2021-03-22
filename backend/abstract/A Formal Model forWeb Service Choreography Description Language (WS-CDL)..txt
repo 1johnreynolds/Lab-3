@@ -1,0 +1,1 @@
+We propose a language CDL as a formal model of simplified WS-CDL. The operational semantics of CDL is given, and static validation and verification of choreographies is studied. Some properties of the proposed model are verified using the SPIN model-checker, which illustrates the potential usage and benefits of the formal model

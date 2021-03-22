@@ -1,0 +1,1 @@
+This paper explores the use of rationale for understanding the context of reputation information so as to facilitate the exchange and transfer of reputation information across distributed heterogeneous reputation systems for selection of the best service for a particular user's requirements.

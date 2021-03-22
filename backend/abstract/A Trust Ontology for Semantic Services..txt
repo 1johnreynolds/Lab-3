@@ -1,0 +1,1 @@
+We propose a novel semantic service trust organization that uses an ontological approach to model service trust. In particular, our ontology-based organization supports various trust phases including trust bootstrapping, atomic service trust, trust composition and trust propagation. We describe the implementation of the proposed trust organization.

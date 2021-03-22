@@ -1,0 +1,7 @@
+# Project exclude paths
+/project/project/target/
+/project/target/
+/target/native_libraries/
+/target/scala-2.11/classes/
+/target/streams/
+/target/web/

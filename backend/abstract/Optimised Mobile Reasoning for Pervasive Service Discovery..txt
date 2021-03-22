@@ -1,0 +1,1 @@
+Today's mobile users have access to a wide range of Web-based services. This paper presents our m-Tableaux algorithm for enabling cost-efficient and optimised semantic reasoning to support pervasive service discovery. We present performance evaluation of the m-Tableaux optimisation strategies which clearly demonstrate its operational feasibility on a mobile device.

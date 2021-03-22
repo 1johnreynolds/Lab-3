@@ -1,0 +1,1 @@
+To achieve effective security in the increasingly dynamic computing environment of the mobile workforce our perspectives on security have to change, requiring the development of new approaches. We discuss a new security paradigm, shrink-wrapped security, in which security services are tightly coupled to a user's situation, and present a framework to help enable its realization.

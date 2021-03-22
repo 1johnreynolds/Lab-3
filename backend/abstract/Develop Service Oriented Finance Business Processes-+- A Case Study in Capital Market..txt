@@ -1,0 +1,1 @@
+Current business process development is a process that needs to apply software development principles and at the same time incorporate the special requirements of service oriented architecture (SOA). In this paper we discuss the steps and principles involved in developing service oriented finance business process in the domain capital market

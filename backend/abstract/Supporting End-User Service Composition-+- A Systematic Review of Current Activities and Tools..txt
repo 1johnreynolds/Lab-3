@@ -1,0 +1,1 @@
+This paper presents a systematic literature review of end-user service composition. It reviews current activities performed by end users, and tools and approaches that enable them to compose and develop service systems from Web Services. The paper also highlights some key open research issues for the future.

@@ -1,0 +1,3 @@
+Process similarity search is an effective way to manage a large number of business process models. However, there exists no benchmark dataset that can be used to evaluate the performance of the existing process similarity search algorithms. To solve this problem, we have constructed a benchmark dataset that modeled by Petri-net. In this paper, the benchmark dataset totally consists of 100 process models, where we have marked out 10 search models and their corresponding 10 relevant models (including itself). And for each search model, the ranking order of its relevant models is derived from user studies. The dataset and the codes of corresponding similarity search algorithms are available to the public on a website
+<sup>1</sup>
+.

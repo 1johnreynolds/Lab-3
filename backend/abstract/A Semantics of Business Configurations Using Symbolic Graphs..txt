@@ -1,0 +1,1 @@
+In this paper we give graph-semantics to a fundamental part of the semantics of the service modeling language SRML: business configurations. To achieve this goal we use symbolic graph transformation systems. We formalize the semantics using this graph transformation system and illustrating it with a simple running example of a trip booking agent.

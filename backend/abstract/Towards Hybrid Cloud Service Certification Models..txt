@@ -1,0 +1,1 @@
+In this paper, we introduce a hybrid approach for certifying security properties of cloud services that combines monitoring and testing data. The paper argues about the need for hybrid certification and examines some basic characteristics of hybrid certification models.

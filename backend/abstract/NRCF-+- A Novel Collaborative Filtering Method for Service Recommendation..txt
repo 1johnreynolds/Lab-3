@@ -1,0 +1,1 @@
+Since there are many Web services on the Internet, personalized Web service selection and recommendation is very important. In this paper, we present a new similarity measure for Web service similarity computation and propose a normal recovery collaborative filtering (NRCF) method for personalized Web service recommendation.

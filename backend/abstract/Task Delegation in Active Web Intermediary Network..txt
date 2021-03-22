@@ -1,0 +1,1 @@
+In this paper, we formalize the concept of a delegation network for Web intermediaries and present formal semantics for the responsibility of these actors. Key properties of the network are proven and method to judge an actor's responsibility is given. This work is important because it determines the accuracy of task execution and the feasibility of content reuse in the network

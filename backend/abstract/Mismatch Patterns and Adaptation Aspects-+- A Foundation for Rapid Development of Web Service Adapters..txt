@@ -1,0 +1,5 @@
+Standardization in Web services simplifies integration. However, it does not remove the need for adapters due to possible heterogeneity among service interfaces and protocols. In this paper, we characterize the problem of Web services adaptation focusing on business interfaces and protocols adapters. Our study shows that many of the differences between business interfaces and protocols are recurring. We introduce 
+<i>mismatch</i>
+ 
+<i>patterns</i>
+ to capture these recurring differences and to provide solutions to resolve them. We leverage mismatch patterns for service adaptation with two approaches: by developing stand-alone adapters and via service modification. We then dig into the notion of adaptation aspects that, following aspect-oriented programming paradigm and service modification approach, allow for rapid development of adapters. We present a study showing that it is a preferable approach in many cases. The proposed approach is implemented in a proof-of-concept prototype tool, and evaluated using both qualitative and quantitative methods.

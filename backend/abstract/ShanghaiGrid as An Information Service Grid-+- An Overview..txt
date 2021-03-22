@@ -1,0 +1,1 @@
+The goal of the ShanghaiGrid is to provide information services to the people. It aims to construct a metropolitan-area information service infrastructure and establish an open standard for widespread upper-layer applications from both communities and the government. This paper introduces the Information Service Grid Toolkit in detail.

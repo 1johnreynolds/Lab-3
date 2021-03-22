@@ -1,0 +1,1 @@
+Provides an in-depth review and analysis of cloud computing, applications for its use, cloud technologies, different kinds of cloud services, types of clouds, and major areas of research and development in the cloud computing field. Also provides an overview of the articles persented in this issue.

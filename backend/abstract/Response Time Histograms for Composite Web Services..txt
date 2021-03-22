@@ -1,0 +1,1 @@
+Probabilistic duration representations can be used to forecast the response time of (composite) Web services, based on empirical data of past executions or calculated from control flow structures. The capability to choose the fastest among similar services or to optimize services based on probable process execution times are only two possible application areas.

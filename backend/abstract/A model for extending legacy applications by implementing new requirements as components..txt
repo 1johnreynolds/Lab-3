@@ -1,0 +1,1 @@
+This paper presents a model for creating applications by joining components and sending data in XML format. The model focuses on legacy applications and ones that are hard to be maintained. In order to analyse it, an implementation of some of its elements has been carried out and used for two experiments

@@ -1,0 +1,9 @@
+Graph Pattern Matching (GPM) plays a significant role in many real applications, where given a graph pattern Q and a data graph G, computing the set M(Q, G) of matching subgraphs of Q in G. However, many applications like the experts recommendation in social networks, often need to find Top-K matches of a designated node v
+<sub>0</sub>
+, rather than the entire set M(Q, G). Moreover, the existing GPM method for matching the designated node v
+<sub>0</sub>
+ does not consider the multiple constraints of the attributes associated with each vertex and each edge which commonly exist in real applications, like the constraints of social contexts for the experts recommendation in contextual social. In this paper, we first propose the Multi-Constrained Top-K Graph Pattern Matching problem (MC-Top-K-GPM), which involves the NP-Complete Multiple Constrained GPM problem. To address the efficiency and effectiveness issues of MC-Top-K-GPM in large-scale social graphs, we propose a novel index, called HB-Tree, which indexes the label and degree of nodes in G and can get candidates of v
+<sub>0</sub>
+ efficiently. Furthermore, we develop a Multi-Constrained Top-K GPM method, called MTK, which can identify Top-K matches of v
+<sub>0</sub>
+ effectively and efficiently. Using real-life data, we experimentally verify that MTK outperforms the existing GPM algorithms in both efficiency and effectiveness in solving the MC-TOP-K GPM problem.

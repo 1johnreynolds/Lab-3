@@ -1,0 +1,1 @@
+In order to offer adequate guidance to the emerging reboot-based self-healing processes in Web services, this paper presents probabilistic models to estimate the recovery time and disruption of recovering a service using multiple levels of reboot. A case study is conducted to demonstrate benefits of the models.

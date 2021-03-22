@@ -1,0 +1,1 @@
+In this demo paper, we present a new data service composition sequence generation approach to solve the ad-hoc data query problem in EDMIS. Our approach allows end users to input some keywords, and then the data services related are found and the Top-K data services composition sequences are generated as output.

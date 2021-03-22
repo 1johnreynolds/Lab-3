@@ -1,0 +1,1 @@
+This paper proposes the content grid architecture for pervasive content delivery. Leveraging the advantages of the Web, P2P, and application networking systems, this new grid infrastructure can provide better quality of content and application delivery. We implemented the content grid architecture using Globus to illustrate its feasibility and potentials

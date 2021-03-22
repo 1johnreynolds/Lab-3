@@ -1,0 +1,1 @@
+Grid workflow description language is the basis of the establishment and execution of grid workflow. We propose a grid workflow description language called GPEL based on BPEL4WS. GPEL can be easily used in grid environment and is more concise and effective than BPEL4WS. In this paper, we analyze the structural characteristics and the expressive power of GPEL.

@@ -1,0 +1,1 @@
+Adaptation of service-based applications (SBA) is not trivial in their heterogeneous and dynamic execution context. While different approaches exist, most of them focus on a specific part of the SBA ignoring the overall impact of the adaptation on the whole application. In this paper we propose a cross-layer adaptation manager (CLAM) that tackles this problem.

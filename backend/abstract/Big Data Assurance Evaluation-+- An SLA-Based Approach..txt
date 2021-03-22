@@ -1,0 +1,1 @@
+The Big Data community has started noticing that there is the need to complete Big Data platforms with assurance techniques proving the correct behavior of Big Data analytics and management. In this paper, we propose a Big Data assurance solution based on Service-Level Agreements (SLAs), focusing on a platform providing Model-based Big Data Analytics-as-a-Service (MBDAaaS).

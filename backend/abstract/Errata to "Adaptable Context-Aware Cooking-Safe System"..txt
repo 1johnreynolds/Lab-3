@@ -1,0 +1,1 @@
+Presents author name corrections in the paper, “Adaptable context-aware cooking-safe system,” (Yared, R. and Abdulrazak, B.), IEEE Trans. Services Comput., vol. 11, no. 2, pp. 236–248,Mar./Apr. 2018.
