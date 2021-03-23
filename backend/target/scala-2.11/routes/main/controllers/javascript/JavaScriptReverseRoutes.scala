@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/huasucaster/Desktop/CS Master/CS7340/Lab3/backend/conf/routes
-// @DATE:Mon Mar 22 10:14:14 CDT 2021
+// @DATE:Tue Mar 23 12:48:52 CDT 2021
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -24,11 +24,21 @@ package controllers.javascript {
 
   
     // @LINE:11
-    def generateTopic: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.AbstractController.generateTopic",
+    def FromTopicToPaper: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.AbstractController.FromTopicToPaper",
       """
         function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "topicResponse"})
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "topicToPaper"})
+        }
+      """
+    )
+  
+    // @LINE:12
+    def FromPaperToMetadata: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.AbstractController.FromPaperToMetadata",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "paperToMetadata"})
         }
       """
     )

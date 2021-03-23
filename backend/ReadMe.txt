@@ -48,6 +48,7 @@ Now you are ready to insert the data from the mysqldump provided into mysql data
     2. Input command: mysql -h localhost -uroot -p -D DatabaseName <./auth_info.sql
     3. Input command: mysql -h localhost -uroot -p -D DatabaseName <./conference_data.sql
     $mysqldump -uroot -p CS7340TEAMONELABTHREE pub_info> './pub_info.sql'
+    $mysqldump -uroot -p CS7340TEAMONELABTHREE topicwithtitle> './topicwithtitle.sql'
     mysql -h localhost -uroot -p -D CS7340TEAMONELABTHREE <./pub_info.sql
 
     Note: DatabaseName should be replaced by the name of the database you have active that you want to insert the data

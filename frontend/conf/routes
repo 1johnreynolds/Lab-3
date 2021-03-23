@@ -1,0 +1,24 @@
+
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /                          controllers.HomeController.querySelectionHandler()
+
+GET     /query1                    controllers.HomeController.query1()
+
+GET     /query2                controllers.HomeController.query2()
+
+
+
+GET     /querySelection            controllers.HomeController.querySelectionHandler()
+
+GET     /topicToPaper                 controllers.HomeController.queryOneHandler()
+
+GET     /paperToMetadata                 controllers.HomeController.queryTwoHandler()
+
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file           controllers.Assets.at(path="/public", file)

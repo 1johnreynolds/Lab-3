@@ -1,7 +1,10 @@
 package controllers;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import play.libs.Json;
 import play.mvc.*;
 import utils.TopicModeling;
+
+import java.util.List;
 
 /**
  * File Name: HomeController.java
@@ -16,10 +19,8 @@ import utils.TopicModeling;
 
 public class HomeController extends Controller {
     public Result index() throws Exception {
-
-
         //TopicModeling.trainTopic();
-        TopicModeling.getTopic("3940");
+        //TopicModeling.getTopic();
         return ok(Json.toJson("Welcome to backend!"));
     }
 }

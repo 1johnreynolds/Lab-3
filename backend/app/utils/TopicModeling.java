@@ -9,6 +9,9 @@ import cc.mallet.topics.*;
 import com.avaje.ebean.SqlRow;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import models.pub_info;
+import models.topicwithtitle;
+import play.libs.Json;
+import play.mvc.Result;
 
 
 import java.time.Duration;
@@ -16,6 +19,8 @@ import java.time.Instant;
 import java.util.*;
 import java.util.regex.*;
 import java.io.*;
+
+
 
 public class TopicModeling {
 
@@ -36,12 +41,17 @@ public class TopicModeling {
         InstanceList instances = new InstanceList(new SerialPipes(pipeList));
         System.out.println("Loading data from database.");
         List<SqlRow> pub = pub_info.findAll();
+        int i=0;
         if (pub.size() != 0) {
             for (SqlRow pubs : pub) {
+                i++;
+                int temp = Integer.compare(i-1,instances.size());
                 String content = pubs.get("title") + " " + pubs.get("pub_abstract");
+                content = content.replaceAll("\r|\n", " ");
                 Reader fileReader = new StringReader(content);
                 instances.addThruPipe(new CsvIterator(fileReader, Pattern.compile("^(\\S*)[\\s,]*(\\S*)[\\s,]*(.*)$"),
                         3, 2, 1));
+
             }
         }
 //        String FILE_IN = "abstract";
@@ -66,6 +76,7 @@ public class TopicModeling {
 //        instances.addThruPipe(new CsvIterator (fileReader, Pattern.compile("^(\\S*)[\\s,]*(\\S*)[\\s,]*(.*)$"),
 //                3, 2, 1));
         // } // data, label, name fields
+        System.out.println(pub.size());
         System.out.println(instances.size());
         System.out.println(instances.toString());
         // Create a model with 100 topics, alpha_t = 0.01, beta_w = 0.01
@@ -98,131 +109,152 @@ public class TopicModeling {
         System.out.println("The training is completed!");
     }
 
-    public static List<String> getTopic(String title_id) throws Exception{
+    public static void getTopic()  {
+        List<ObjectNode> result =new ArrayList<>();
 
-        if(savedmodel == null){
+
+        try{
+        double threshold = 0.1;
+        InstanceList instancesToGetSize = InstanceList.load(new File("instances"));
+
+        if (savedmodel == null) {
             savedmodel = ParallelTopicModel.read(new File("model"));
         }
-        if(dataAlphabet == null){
-            dataAlphabet = InstanceList.load(new File("instances")).getDataAlphabet();
+        if (dataAlphabet == null) {
+            dataAlphabet = instancesToGetSize.getDataAlphabet();
         }
-
-        List<String> content=new ArrayList<>();
         int numTopics = 10;
-
-        int instanceID = Integer.parseInt(title_id)-1;
-        FeatureSequence tokens = (FeatureSequence) savedmodel.getData().get(instanceID).instance.getData();
-        LabelSequence topics = savedmodel.getData().get(instanceID).topicSequence;
-
-
-        /**
-         * Maybe need to use again
-         */
-//        Formatter out = new Formatter(new StringBuilder(), Locale.US);
-//        for (int position = 0; position < tokens.getLength(); position++) {
-//            out.format("%s-%d ", dataAlphabet.lookupObject(tokens.getIndexAtPosition(position)), topics.getIndexAtPosition(position));
-//        }
-//        System.out.println(out);
-        /**
-         * Maybe need to use again
-         */
+        for (int i = 0; i < instancesToGetSize.size(); i++) {
+            int article_id = i + 1;
+            int instanceID = article_id - 1;
+            FeatureSequence tokens = (FeatureSequence) savedmodel.getData().get(instanceID).instance.getData();
+            LabelSequence topics = savedmodel.getData().get(instanceID).topicSequence;
 
 
-        // Estimate the topic distribution of the first instance,
-        //  given the current Gibbs state.
-        double[] topicDistribution = savedmodel.getTopicProbabilities(instanceID);
-        System.out.println("Topic Distribution:"+topicDistribution.toString());
-        System.out.println("Tokens :"+tokens);
-        System.out.println("Topics :"+topics);
 
-        // Get an array of sorted sets of word ID/count pairs
-        ArrayList<TreeSet<IDSorter>> topicSortedWords = savedmodel.getSortedWords();
-        //Json: topic1: {id1: matadate} {}
-        // Show top 5 words in topics with proportions for the first document
-        for (int topic = 0; topic < numTopics; topic++) {
-            Iterator<IDSorter> iterator = topicSortedWords.get(topic).iterator();
-            Formatter out = new Formatter(new StringBuilder(), Locale.US);
-            out.format("%d\t%.3f\t", topic, topicDistribution[topic]);
-            int rank = 0;
-            while (iterator.hasNext() && rank < 5) {
-                IDSorter idCountPair = iterator.next();
-                out.format("%s (%.0f) ", dataAlphabet.lookupObject(idCountPair.getID()), idCountPair.getWeight());
-                rank++;
+            // Estimate the topic distribution of the first instance,
+            //  given the current Gibbs state.
+            double[] topicDistribution = savedmodel.getTopicProbabilities(instanceID);
+
+//        System.out.println("Instance size:"+InstanceList.load(new File("instances")).size());
+//        System.out.println("Topic Distribution:"+topicDistribution.toString());
+//        System.out.println("Tokens :"+tokens);
+//        System.out.println("Topics :"+topics);
+
+            // Get an array of sorted sets of word ID/count pairs
+            ArrayList<TreeSet<IDSorter>> topicSortedWords = savedmodel.getSortedWords();
+            //Json: topic1: {id1: matadate} {}
+            // Show top 5 words in topics with proportions for the first document
+            for (int topic = 0; topic < numTopics; topic++) {
+                Iterator<IDSorter> iterator = topicSortedWords.get(topic).iterator();
+                Formatter out = new Formatter(new StringBuilder(), Locale.US);
+                if (topicDistribution[topic] >= threshold) {
+                    String title= pub_info.getTitle(article_id).get(0).get("title").toString();
+                    String topicstring="topic"+topic;
+                    String distribution=Double.toString(topicDistribution[topic]);
+                    out.format("%d\t%.3f\t%s", topic, topicDistribution[topic], title);
+                    topicwithtitle.insertTopicWithValue(topicstring,title,distribution);
+//                    ObjectNode temp = Json.newObject();
+//                    temp.put("topic",topic);
+//                    temp.put("topicDistribution",topicDistribution[topic]);
+//                    temp.put("title",title);
+//                    result.add(temp);
+                }
+                System.out.println(out);
             }
-            System.out.println(out);
         }
+
+//        for (int topic = 0; topic < numTopics; topic++) {
+//            Iterator<IDSorter> iterator = topicSortedWords.get(topic).iterator();
+//            Formatter out = new Formatter(new StringBuilder(), Locale.US);
+//            out.format("%d\t%.3f\t", topic, topicDistribution[topic]);
+//            int rank = 0;
+//            while (iterator.hasNext() && rank < 5) {
+//                IDSorter idCountPair = iterator.next();
+//                out.format("%s (%.0f) ", dataAlphabet.lookupObject(idCountPair.getID()), idCountPair.getWeight());
+//                rank++;
+//            }
+//            System.out.println(out);
+//        }
 
         // Create a new instance with high probability of topic 0
-        StringBuilder topicZeroText = new StringBuilder();
-        Iterator<IDSorter> iterator = topicSortedWords.get(0).iterator();
-
-        int rank = 0;
-        while (iterator.hasNext() && rank < 5) {
-            IDSorter idCountPair = iterator.next();
-            topicZeroText.append(dataAlphabet.lookupObject(idCountPair.getID()) + " ");
-            rank++;
-        }
+//        StringBuilder topicZeroText = new StringBuilder();
+//        Iterator<IDSorter> iterator = topicSortedWords.get(0).iterator();
+//
+//        int rank = 0;
+//        while (iterator.hasNext() && rank < 5) {
+//            IDSorter idCountPair = iterator.next();
+//            topicZeroText.append(dataAlphabet.lookupObject(idCountPair.getID()) + " ");
+//            rank++;
+//        }
 
         // Create a new instance named "test instance" with empty target and source fields.
-        InstanceList testing = new InstanceList(InstanceList.load(new File("instances")).getPipe());
-        testing.addThruPipe(new Instance(topicZeroText.toString(), null, "test instance", null));
-
-        TopicInferencer inferencer = savedmodel.getInferencer();
-        double[] testProbabilities = inferencer.getSampledDistribution(testing.get(0), 10, 1, 5);
-        System.out.println("0\t" + testProbabilities[0]);
-        return content;
-    }
-
-    public static List<String> getFileList(File file) {
-
-        List<String> result = new ArrayList<String>();
-
-        if (!file.isDirectory()) {
-            System.out.println(file.getAbsolutePath());
-            result.add(file.getAbsolutePath());
-        } else {
-            File[] directoryList = file.listFiles(new FileFilter() {
-                public boolean accept(File file) {
-                    if (file.isFile() && file.getName().indexOf("txt") > -1) {
-                        return true;
-                    } else {
-                        return false;
-                    }
-                }
-            });
-            for (int i = 0; i < directoryList.length; i++) {
-                result.add(directoryList[i].getPath());
-            }
-        }
-
-        return result;
-    }
-
-
-    public static void WriteTxt(String filename, String fileContent){
-        BufferedWriter writer = null;
-        try
-        {
-            writer = new BufferedWriter( new FileWriter(filename));
-            writer.write(fileContent);
-
-        }
-        catch ( IOException e)
-        {
-        }
-        finally
-        {
-            try
-            {
-                if ( writer != null)
-                    writer.close( );
-            }
-            catch ( IOException e)
-            {
-            }
-        }
+//        InstanceList testing = new InstanceList(InstanceList.load(new File("instances")).getPipe());
+//        testing.addThruPipe(new Instance(topicZeroText.toString(), null, "test instance", null));
+//
+//        TopicInferencer inference = savedmodel.getInferencer();
+//        double[] testProbabilities = inference.getSampledDistribution(testing.get(0), 10, 1, 5);
+//        System.out.println("0\t" + testProbabilities[0]);
 
     }
+        catch (Exception e) {
+            System.out.println(e);
+        }
+//        System.out.println(result);
+
+
+    }
+
+//    public static List<String> getFileList(File file) {
+//
+//        List<String> result = new ArrayList<String>();
+//
+//        if (!file.isDirectory()) {
+//            System.out.println(file.getAbsolutePath());
+//            result.add(file.getAbsolutePath());
+//        } else {
+//            File[] directoryList = file.listFiles(new FileFilter() {
+//                public boolean accept(File file) {
+//                    if (file.isFile() && file.getName().indexOf("txt") > -1) {
+//                        return true;
+//                    } else {
+//                        return false;
+//                    }
+//                }
+//            });
+//            for (int i = 0; i < directoryList.length; i++) {
+//                result.add(directoryList[i].getPath());
+//            }
+//        }
+//
+//        return result;
+//    }
+//
+//
+//    public static void WriteTxt(String filename, String fileContent){
+//        BufferedWriter writer = null;
+//        try
+//        {
+//            writer = new BufferedWriter( new FileWriter(filename));
+//            writer.write(fileContent);
+//
+//        }
+//        catch ( IOException e)
+//        {
+//        }
+//        finally
+//        {
+//            try
+//            {
+//                if ( writer != null)
+//                    writer.close( );
+//            }
+//            catch ( IOException e)
+//            {
+//            }
+//        }
+//
+//    }
 }
 
 

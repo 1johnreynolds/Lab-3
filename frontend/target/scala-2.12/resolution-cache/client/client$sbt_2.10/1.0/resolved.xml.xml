@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="client"
+		module="client$sbt_2.10"
+		revision="1.0"
+		status="integration"
+		publication="20210227182058"
+	/>
+	<configurations>
+		<conf name="default" visibility="public"/>
+	</configurations>
+	<publications>
+	</publications>
+	<dependencies>
+		<dependency org="org.scala-sbt" name="sbt" rev="0.13.17" conf="default->default(compile)"/>
+		<dependency org="com.typesafe.play" name="sbt-plugin" rev="2.7.3" conf="default->default(compile)" scalaVersion="2.10" sbtVersion="0.13" info.apiURL="https://www.playframework.com/documentation/2.7.3/api/scala/index.html"/>
+		<dependency org="com.typesafe.play" name="sbt-routes-compiler_2.10" rev="2.7.3" conf="default->default(compile)" info.apiURL="https://www.playframework.com/documentation/2.7.3/api/scala/index.html"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.10.7" conf="default->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.10.7/"/>
+		<dependency org="com.typesafe.play" name="twirl-api_2.10" rev="1.4.2" conf="default->default(compile)"/>
+		<dependency org="com.typesafe.play" name="run-support_2.10" rev="2.7.3" conf="default->default(compile)" info.apiURL="https://www.playframework.com/documentation/2.7.3/api/scala/index.html"/>
+		<dependency org="com.typesafe.play" name="build-link" rev="2.7.3" conf="default->default(compile)" info.apiURL="https://www.playframework.com/documentation/2.7.3/api/scala/index.html"/>
+		<dependency org="com.typesafe.play" name="play-exceptions" rev="2.7.3" conf="default->default(compile)" info.apiURL="https://www.playframework.com/documentation/2.7.3/api/scala/index.html"/>
+		<dependency org="com.lightbend.play" name="play-file-watch_2.10" rev="1.1.8" conf="default->default(compile)"/>
+		<dependency org="io.methvin" name="directory-watcher" rev="0.8.1" conf="default->default(compile)"/>
+		<dependency org="net.java.dev.jna" name="jna" rev="5.0.0" conf="default->default(compile)"/>
+		<dependency org="com.github.pathikrit" name="better-files_2.10" rev="2.17.0" conf="default->default(compile)"/>
+		<dependency org="com.typesafe" name="config" rev="1.3.4" conf="default->default(compile)"/>
+		<dependency org="org.slf4j" name="slf4j-simple" rev="1.7.26" conf="default->default(compile)"/>
+		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.26" conf="default->default(compile)"/>
+		<dependency org="com.typesafe.sbt" name="sbt-twirl" rev="1.4.2" conf="default->default(compile)" scalaVersion="2.10" sbtVersion="0.13"/>
+		<dependency org="com.typesafe.play" name="twirl-compiler_2.10" rev="1.4.2" conf="default->default(compile)"/>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.10.7" conf="default->default(compile)"/>
+		<dependency org="org.scala-lang" name="scala-reflect" rev="2.10.7" conf="default->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.10.7/"/>
+		<dependency org="com.typesafe.play" name="twirl-parser_2.10" rev="1.4.2" conf="default->default(compile)"/>
+		<dependency org="com.typesafe.sbt" name="sbt-native-packager" rev="1.3.20" conf="default->default(compile)" scalaVersion="2.10" sbtVersion="0.13"/>
+		<dependency org="org.apache.commons" name="commons-compress" rev="1.18" conf="default->default(compile)"/>
+		<dependency org="org.apache.ant" name="ant" rev="1.10.5" conf="default->default(compile)"/>
+		<dependency org="org.apache.ant" name="ant-launcher" rev="1.10.5" conf="default->default(compile)"/>
+		<dependency org="com.lightbend.sbt" name="sbt-javaagent" rev="0.1.4" conf="default->default(compile)" scalaVersion="2.10" sbtVersion="0.13"/>
+		<dependency org="com.typesafe.sbt" name="sbt-web" rev="1.4.4" conf="default->default(compile)" scalaVersion="2.10" sbtVersion="0.13"/>
+		<dependency org="com.typesafe.akka" name="akka-actor_2.10" rev="2.3.16" conf="default->default(compile)"/>
+		<dependency org="org.webjars" name="webjars-locator-core" rev="0.36" conf="default->default(compile)"/>
+		<dependency org="org.apache.commons" name="commons-lang3" rev="3.8.1" conf="default->default(compile)"/>
+		<dependency org="com.fasterxml.jackson.core" name="jackson-core" rev="2.9.7" conf="default->default(compile)"/>
+		<dependency org="com.typesafe.sbt" name="sbt-js-engine" rev="1.2.3" conf="default->default(compile)" scalaVersion="2.10" sbtVersion="0.13"/>
+		<dependency org="com.typesafe" name="jse_2.10" rev="1.2.4" conf="default->default(compile)"/>
+		<dependency org="io.apigee.trireme" name="trireme-core" rev="0.9.4" conf="default->default(compile)"/>
+		<dependency org="io.apigee.trireme" name="trireme-kernel" rev="0.9.4" conf="default->default(compile)"/>
+		<dependency org="org.mozilla" name="rhino" rev="1.7.10" conf="default->default(compile)"/>
+		<dependency org="io.apigee.trireme" name="trireme-node10src" rev="0.9.4" conf="default->default(compile)"/>
+		<dependency org="io.spray" name="spray-json_2.10" rev="1.3.5" conf="default->default(compile)"/>
+		<dependency org="com.typesafe" name="npm_2.10" rev="1.2.1" conf="default->default(compile)"/>
+		<dependency org="org.webjars" name="npm" rev="4.2.0" conf="default->default(compile)"/>
+	</dependencies>
+</ivy-module>

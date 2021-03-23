@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f949c2c9-5f2c-4fdb-9b16-ea12495995e7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Play2ProjectSettings">
+    <option name="LANGUAGE_IMPORTS">
+      <array>
+        <option value="_root_.play.twirl.api.Xml" />
+        <option value="_root_.play.twirl.api.Html" />
+        <option value="java.lang._" />
+        <option value="play.mvc._" />
+        <option value="_root_.play.twirl.api.Txt" />
+        <option value="play.data._" />
+        <option value="play.api.data.Field" />
+        <option value="play.api.templates.PlayMagic._" />
+        <option value="_root_.play.twirl.api.JavaScript" />
+        <option value="play.core.j.PlayMagicForJava._" />
+        <option value="_root_.play.twirl.api.TwirlHelperImports._" />
+        <option value="play.core.j.PlayFormsMagicForJava._" />
+        <option value="java.util._" />
+        <option value="scala.collection.JavaConverters._" />
+        <option value="play.mvc.Http.Context.Implicit._" />
+        <option value="_root_.play.twirl.api.TwirlFeatureImports._" />
+      </array>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1pSdyMWvbBt2J4bre0AH3Gu1R9D" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Play2FrameworkRunConfigurations" factoryName="Play 2 App" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="enableSbtGlobalPlugins" value="false" />
+      <option name="play2EnvVariables">
+        <map />
+      </option>
+      <option name="play2IsNonDefaultInstallDirUsed" value="false" />
+      <option name="play2JpdaPort" value="9999" />
+      <option name="play2JvmOptions">
+        <array>
+          <option value="-Xms512M" />
+          <option value="-Xmx1024M" />
+          <option value="-Xss1M" />
+          <option value="-XX:+CMSClassUnloadingEnabled" />
+          <option value="-XX:MaxPermSize=256M" />
+        </array>
+      </option>
+      <option name="play2NeedOpenInBrowser" value="true" />
+      <option name="play2NonDefaultInstallDir" value="" />
+      <option name="play2OpenUrl" value="http://localhost:9001" />
+      <option name="play2isAutoReloadEnabled" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="frontend" type="Play2FrameworkRunConfigurations" factoryName="Play 2 App" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="client" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="enableSbtGlobalPlugins" value="false" />
+      <option name="play2EnvVariables">
+        <map />
+      </option>
+      <option name="play2IsNonDefaultInstallDirUsed" value="false" />
+      <option name="play2JpdaPort" value="9999" />
+      <option name="play2JvmOptions">
+        <array>
+          <option value="-Xms512M" />
+          <option value="-Xmx1024M" />
+          <option value="-Xss1M" />
+          <option value="-XX:+CMSClassUnloadingEnabled" />
+          <option value="-XX:MaxPermSize=256M" />
+        </array>
+      </option>
+      <option name="play2NeedOpenInBrowser" value="true" />
+      <option name="play2NonDefaultInstallDir" value="" />
+      <option name="play2OpenUrl" value="http://localhost:9001" />
+      <option name="play2isAutoReloadEnabled" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="client" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="client [file:/Users/huasucaster/Downloads/CS7340-Lab2-Team1/Lab-2-frontend/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="client-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4845391730000" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="1913583045" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="934637055" />
+        <entry key="$PROJECT_DIR$/project/plugins.sbt" value="2061145994" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../CS57-340-Lab2-Team1/Lab-2-backend" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../CS57-340-Lab2-Team1/Lab-2-frontend" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Lab-2-Ebean 3/Frontend" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Lab-2-Ebean/Frontend" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Lab-2-backend-beichenh" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Lab-2-backend-master" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Lab-2-frontend-beichenh" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Lab2/Lab-2-backend" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Lab2/Lab-2-frontend" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Lab2/Lab2/backend/Lab-2-backend" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Lab2/Lab2/frontend/Lab-2-frontend" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../Lab-2-backend" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../SOSE Lab-2 Play Frontend-Backend/Frontend" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../../Lab-2-backend-beichenh" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f949c2c9-5f2c-4fdb-9b16-ea12495995e7" name="Default Changelist" comment="" />
+      <created>1615180678887</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615180678887</updated>
+      <workItem from="1615180680496" duration="927000" />
+      <workItem from="1615593949668" duration="434000" />
+      <workItem from="1616517274563" duration="3626000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="339" y="167" width="868" height="635" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616518509947">
+      <screen x="0" y="0" width="1536" height="960" />
+    </state>
+    <state x="385" y="-872" width="1085" height="688" key="#com.intellij.execution.impl.EditConfigurationsDialog/-39.-1055.1920.1055/0.25.1536.935@-39.-1055.1920.1055" timestamp="1615180893655" />
+    <state x="339" y="167" width="868" height="635" key="#com.intellij.execution.impl.EditConfigurationsDialog/-39.-1080.1920.1080/0.0.1536.960@0.0.1536.960" timestamp="1616518509947" />
+    <state x="537" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1616518194614">
+      <screen x="0" y="0" width="1536" height="960" />
+    </state>
+    <state x="537" y="100" key="#com.intellij.ide.util.MemberChooser/-39.-1080.1920.1080/0.0.1536.960@0.0.1536.960" timestamp="1616518194614" />
+    <state width="1484" height="3" key="GridCell.Tab.0.bottom" timestamp="1616522620244">
+      <screen x="0" y="0" width="1536" height="960" />
+    </state>
+    <state width="1868" height="274" key="GridCell.Tab.0.bottom/-39.-1055.1920.1055/0.25.1536.935@-39.-1055.1920.1055" timestamp="1615182988812" />
+    <state width="1484" height="3" key="GridCell.Tab.0.bottom/-39.-1080.1920.1080/0.0.1536.960@0.0.1536.960" timestamp="1616522620244" />
+    <state width="1484" height="3" key="GridCell.Tab.0.center" timestamp="1616522620238">
+      <screen x="0" y="0" width="1536" height="960" />
+    </state>
+    <state width="1868" height="274" key="GridCell.Tab.0.center/-39.-1055.1920.1055/0.25.1536.935@-39.-1055.1920.1055" timestamp="1615182988811" />
+    <state width="1484" height="3" key="GridCell.Tab.0.center/-39.-1080.1920.1080/0.0.1536.960@0.0.1536.960" timestamp="1616522620237" />
+    <state width="1484" height="3" key="GridCell.Tab.0.left" timestamp="1616522620234">
+      <screen x="0" y="0" width="1536" height="960" />
+    </state>
+    <state width="1868" height="274" key="GridCell.Tab.0.left/-39.-1055.1920.1055/0.25.1536.935@-39.-1055.1920.1055" timestamp="1615182988811" />
+    <state width="1484" height="3" key="GridCell.Tab.0.left/-39.-1080.1920.1080/0.0.1536.960@0.0.1536.960" timestamp="1616522620234" />
+    <state width="1484" height="3" key="GridCell.Tab.0.right" timestamp="1616522620242">
+      <screen x="0" y="0" width="1536" height="960" />
+    </state>
+    <state width="1868" height="274" key="GridCell.Tab.0.right/-39.-1055.1920.1055/0.25.1536.935@-39.-1055.1920.1055" timestamp="1615182988812" />
+    <state width="1484" height="3" key="GridCell.Tab.0.right/-39.-1080.1920.1080/0.0.1536.960@0.0.1536.960" timestamp="1616522620242" />
+  </component>
+</project>

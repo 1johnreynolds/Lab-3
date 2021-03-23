@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/huasucaster/Desktop/CS Master/CS7340/Lab3/backend/conf/routes
-// @DATE:Mon Mar 22 10:14:14 CDT 2021
+// @DATE:Tue Mar 23 12:48:52 CDT 2021
 
 package router
 
@@ -44,7 +44,8 @@ class Routes(
 
   def documentation = List(
     ("""GET""", this.prefix, """controllers.HomeController.index"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """topicResponse""", """controllers.AbstractController.generateTopic()"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """topicToPaper""", """controllers.AbstractController.FromTopicToPaper"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """paperToMetadata""", """controllers.AbstractController.FromPaperToMetadata"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -70,19 +71,36 @@ class Routes(
   )
 
   // @LINE:11
-  private[this] lazy val controllers_AbstractController_generateTopic1_route = Route("POST",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("topicResponse")))
+  private[this] lazy val controllers_AbstractController_FromTopicToPaper1_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("topicToPaper")))
   )
-  private[this] lazy val controllers_AbstractController_generateTopic1_invoker = createInvoker(
-    AbstractController_0.generateTopic(),
+  private[this] lazy val controllers_AbstractController_FromTopicToPaper1_invoker = createInvoker(
+    AbstractController_0.FromTopicToPaper,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.AbstractController",
-      "generateTopic",
+      "FromTopicToPaper",
       Nil,
       "POST",
       """ An example controller showing a sample home page""",
-      this.prefix + """topicResponse"""
+      this.prefix + """topicToPaper"""
+    )
+  )
+
+  // @LINE:12
+  private[this] lazy val controllers_AbstractController_FromPaperToMetadata2_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("paperToMetadata")))
+  )
+  private[this] lazy val controllers_AbstractController_FromPaperToMetadata2_invoker = createInvoker(
+    AbstractController_0.FromPaperToMetadata,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.AbstractController",
+      "FromPaperToMetadata",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """paperToMetadata"""
     )
   )
 
@@ -96,9 +114,15 @@ class Routes(
       }
   
     // @LINE:11
-    case controllers_AbstractController_generateTopic1_route(params) =>
+    case controllers_AbstractController_FromTopicToPaper1_route(params) =>
       call { 
-        controllers_AbstractController_generateTopic1_invoker.call(AbstractController_0.generateTopic())
+        controllers_AbstractController_FromTopicToPaper1_invoker.call(AbstractController_0.FromTopicToPaper)
+      }
+  
+    // @LINE:12
+    case controllers_AbstractController_FromPaperToMetadata2_route(params) =>
+      call { 
+        controllers_AbstractController_FromPaperToMetadata2_invoker.call(AbstractController_0.FromPaperToMetadata)
       }
   }
 }

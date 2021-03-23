@@ -14,7 +14,7 @@ public class pub_info {
 
     @Id
     @Column
-    public Long pid;
+    public Long id;
 
     @Column(columnDefinition = "VARCHAR (250)NOT NULL DEFAULT ''")
     public String title;
@@ -85,6 +85,30 @@ public class pub_info {
             List<SqlRow> queryFindAll = Ebean.createSqlQuery("SELECT * FROM pub_info;")
                     .findList();
             return queryFindAll;
+        }catch(Exception e){
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public static List<SqlRow> getTitle(int id){
+        try{
+            List<SqlRow> queryFindTitle = Ebean.createSqlQuery("SELECT title FROM pub_info " +
+                    "where title="+id+";")
+                    .findList();
+            return queryFindTitle;
+        }catch(Exception e){
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public static List<SqlRow> getMetadata(String title){
+        try{
+            List<SqlRow> queryFindTitle = Ebean.createSqlQuery("SELECT * FROM pub_info " +
+                    "where title='"+replacePunctuation(title)+"';")
+                    .findList();
+            return queryFindTitle;
         }catch(Exception e){
             e.printStackTrace();
             return null;

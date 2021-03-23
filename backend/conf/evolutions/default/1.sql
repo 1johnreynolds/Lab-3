@@ -4,7 +4,7 @@
 # --- !Ups
 
 create table pub_info (
-  pid                           bigint auto_increment not null,
+  id                            bigint auto_increment not null,
   title                         varchar(250)NOT NULL DEFAULT '',
   pub_abstract                  longtext,
   mdate                         varchar(100) NOT NULL DEFAULT '',
@@ -24,11 +24,21 @@ create table pub_info (
   isbn                          varchar(50) NOT NULL DEFAULT '',
   series                        varchar(100) NOT NULL DEFAULT '',
   cross_ref                     varchar(100) NOT NULL DEFAULT '',
-  constraint pk_pub_info primary key (pid)
+  constraint pk_pub_info primary key (id)
+);
+
+create table topicwithtitle (
+  pid                           bigint auto_increment not null,
+  topic                         varchar(250)NOT NULL DEFAULT '',
+  title                         varchar(250)NOT NULL DEFAULT '',
+  distribution                  varchar(100) NOT NULL DEFAULT '',
+  constraint pk_topicwithtitle primary key (pid)
 );
 
 
 # --- !Downs
 
 drop table if exists pub_info;
+
+drop table if exists topicwithtitle;
 

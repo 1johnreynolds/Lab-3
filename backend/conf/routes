@@ -8,8 +8,8 @@ GET     /                           controllers.HomeController.index
 
 
 # An example controller showing a sample home page
-POST     /topicResponse                    controllers.AbstractController.generateTopic()
-
+POST     /topicToPaper                    controllers.AbstractController.FromTopicToPaper
+POST     /paperToMetadata                    controllers.AbstractController.FromPaperToMetadata
 
 
 
