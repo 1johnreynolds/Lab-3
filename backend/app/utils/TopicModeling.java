@@ -150,17 +150,17 @@ public class TopicModeling {
                 Formatter out = new Formatter(new StringBuilder(), Locale.US);
                 if (topicDistribution[topic] >= threshold) {
                     String title= pub_info.getTitle(article_id).get(0).get("title").toString();
-                    String topicstring="topic"+topic;
+                    String topicstring="topic"+(topic+1);
                     String distribution=Double.toString(topicDistribution[topic]);
-                    out.format("%d\t%.3f\t%s", topic, topicDistribution[topic], title);
+                    out.format("%d\t%.3f\t%s", topic+1, topicDistribution[topic], title);
                     topicwithtitle.insertTopicWithValue(topicstring,title,distribution);
 //                    ObjectNode temp = Json.newObject();
 //                    temp.put("topic",topic);
 //                    temp.put("topicDistribution",topicDistribution[topic]);
 //                    temp.put("title",title);
 //                    result.add(temp);
+                    System.out.println(out);
                 }
-                System.out.println(out);
             }
         }
 

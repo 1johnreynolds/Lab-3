@@ -94,7 +94,7 @@ public class pub_info {
     public static List<SqlRow> getTitle(int id){
         try{
             List<SqlRow> queryFindTitle = Ebean.createSqlQuery("SELECT title FROM pub_info " +
-                    "where title="+id+";")
+                    "where id="+id+";")
                     .findList();
             return queryFindTitle;
         }catch(Exception e){
