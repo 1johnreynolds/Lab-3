@@ -17,7 +17,9 @@ import utils.TopicModeling;
 public class HomeController extends Controller {
     public Result index() throws Exception {
 
-        TopicModeling.GetTopic();
+
+        //TopicModeling.trainTopic();
+        TopicModeling.getTopic("3940");
         return ok(Json.toJson("Welcome to backend!"));
     }
 }

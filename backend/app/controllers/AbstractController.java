@@ -24,7 +24,7 @@ public class AbstractController {
 //        JsonNode req = request().body().asJson();
 //        String title = req.get("title").asText();
 //        System.out.println("receive title: "+title);
-        TopicModeling.GetTopic();
+//        TopicModeling.GetTopic();
         try {
             String query1_1="";
             return ok(query1_1);

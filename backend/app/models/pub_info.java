@@ -82,9 +82,7 @@ public class pub_info {
     public static List<SqlRow> findAll() {
 
         try{
-
-            List<SqlRow> queryFindAll = Ebean.createSqlQuery("SELECT * FROM pub_info " +
-                    "where pub_abstract not like 'null';")
+            List<SqlRow> queryFindAll = Ebean.createSqlQuery("SELECT * FROM pub_info;")
                     .findList();
             return queryFindAll;
         }catch(Exception e){
@@ -92,6 +90,8 @@ public class pub_info {
             return null;
         }
     }
+
+
 
 
     /**
