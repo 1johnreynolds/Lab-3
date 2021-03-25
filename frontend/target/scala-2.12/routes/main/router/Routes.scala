@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/huasucaster/Desktop/CS Master/CS7340/Lab3/frontend/conf/routes
-// @DATE:Tue Mar 23 13:04:33 CDT 2021
+// @SOURCE:/Users/huasucaster/Downloads/Lab-3/frontend/conf/routes
+// @DATE:Thu Mar 25 00:41:12 CDT 2021
 
 package router
 
@@ -16,7 +16,7 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:7
   HomeController_1: controllers.HomeController,
-  // @LINE:24
+  // @LINE:20
   Assets_0: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -25,7 +25,7 @@ class Routes(
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:7
     HomeController_1: controllers.HomeController,
-    // @LINE:24
+    // @LINE:20
     Assets_0: controllers.Assets
   ) = this(errorHandler, HomeController_1, Assets_0, "/")
 
@@ -40,12 +40,13 @@ class Routes(
   }
 
   def documentation = List(
-    ("""GET""", this.prefix, """controllers.HomeController.querySelectionHandler()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """query1""", """controllers.HomeController.query1()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """query2""", """controllers.HomeController.query2()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """querySelection""", """controllers.HomeController.querySelectionHandler()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """topicToPaper""", """controllers.HomeController.queryOneHandler()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """paperToMetadata""", """controllers.HomeController.queryTwoHandler()"""),
+    ("""GET""", this.prefix, """controllers.HomeController.index()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """topicSelection""", """controllers.HomeController.topicSelection()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """paperSelection""", """controllers.HomeController.paperSelection()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """paperView1""", """controllers.HomeController.paperView1()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """topicSelectionApi""", """controllers.HomeController.topicSelectionApi()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """paperSelectionApi""", """controllers.HomeController.paperSelectionApi()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """paperView2""", """controllers.HomeController.paperView2()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.at(path:String = "/public", file:String)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -55,118 +56,136 @@ class Routes(
 
 
   // @LINE:7
-  private[this] lazy val controllers_HomeController_querySelectionHandler0_route = Route("GET",
+  private[this] lazy val controllers_HomeController_index0_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix)))
   )
-  private[this] lazy val controllers_HomeController_querySelectionHandler0_invoker = createInvoker(
-    HomeController_1.querySelectionHandler(),
+  private[this] lazy val controllers_HomeController_index0_invoker = createInvoker(
+    HomeController_1.index(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.HomeController",
-      "querySelectionHandler",
+      "index",
       Nil,
       "GET",
       this.prefix + """""",
-      """ An example controller showing a sample home page""",
+      """ Part 1""",
       Seq()
     )
   )
 
-  // @LINE:9
-  private[this] lazy val controllers_HomeController_query11_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("query1")))
+  // @LINE:8
+  private[this] lazy val controllers_HomeController_topicSelection1_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("topicSelection")))
   )
-  private[this] lazy val controllers_HomeController_query11_invoker = createInvoker(
-    HomeController_1.query1(),
+  private[this] lazy val controllers_HomeController_topicSelection1_invoker = createInvoker(
+    HomeController_1.topicSelection(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.HomeController",
-      "query1",
+      "topicSelection",
       Nil,
       "GET",
-      this.prefix + """query1""",
+      this.prefix + """topicSelection""",
       """""",
       Seq()
     )
   )
 
-  // @LINE:11
-  private[this] lazy val controllers_HomeController_query22_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("query2")))
+  // @LINE:9
+  private[this] lazy val controllers_HomeController_paperSelection2_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("paperSelection")))
   )
-  private[this] lazy val controllers_HomeController_query22_invoker = createInvoker(
-    HomeController_1.query2(),
+  private[this] lazy val controllers_HomeController_paperSelection2_invoker = createInvoker(
+    HomeController_1.paperSelection(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.HomeController",
-      "query2",
+      "paperSelection",
       Nil,
       "GET",
-      this.prefix + """query2""",
+      this.prefix + """paperSelection""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:10
+  private[this] lazy val controllers_HomeController_paperView13_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("paperView1")))
+  )
+  private[this] lazy val controllers_HomeController_paperView13_invoker = createInvoker(
+    HomeController_1.paperView1(),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.HomeController",
+      "paperView1",
+      Nil,
+      "GET",
+      this.prefix + """paperView1""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:13
+  private[this] lazy val controllers_HomeController_topicSelectionApi4_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("topicSelectionApi")))
+  )
+  private[this] lazy val controllers_HomeController_topicSelectionApi4_invoker = createInvoker(
+    HomeController_1.topicSelectionApi(),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.HomeController",
+      "topicSelectionApi",
+      Nil,
+      "GET",
+      this.prefix + """topicSelectionApi""",
+      """Part 2""",
+      Seq()
+    )
+  )
+
+  // @LINE:14
+  private[this] lazy val controllers_HomeController_paperSelectionApi5_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("paperSelectionApi")))
+  )
+  private[this] lazy val controllers_HomeController_paperSelectionApi5_invoker = createInvoker(
+    HomeController_1.paperSelectionApi(),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.HomeController",
+      "paperSelectionApi",
+      Nil,
+      "GET",
+      this.prefix + """paperSelectionApi""",
       """""",
       Seq()
     )
   )
 
   // @LINE:15
-  private[this] lazy val controllers_HomeController_querySelectionHandler3_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("querySelection")))
+  private[this] lazy val controllers_HomeController_paperView26_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("paperView2")))
   )
-  private[this] lazy val controllers_HomeController_querySelectionHandler3_invoker = createInvoker(
-    HomeController_1.querySelectionHandler(),
+  private[this] lazy val controllers_HomeController_paperView26_invoker = createInvoker(
+    HomeController_1.paperView2(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.HomeController",
-      "querySelectionHandler",
+      "paperView2",
       Nil,
       "GET",
-      this.prefix + """querySelection""",
+      this.prefix + """paperView2""",
       """""",
       Seq()
     )
   )
 
-  // @LINE:17
-  private[this] lazy val controllers_HomeController_queryOneHandler4_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("topicToPaper")))
-  )
-  private[this] lazy val controllers_HomeController_queryOneHandler4_invoker = createInvoker(
-    HomeController_1.queryOneHandler(),
-    play.api.routing.HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.HomeController",
-      "queryOneHandler",
-      Nil,
-      "GET",
-      this.prefix + """topicToPaper""",
-      """""",
-      Seq()
-    )
-  )
-
-  // @LINE:19
-  private[this] lazy val controllers_HomeController_queryTwoHandler5_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("paperToMetadata")))
-  )
-  private[this] lazy val controllers_HomeController_queryTwoHandler5_invoker = createInvoker(
-    HomeController_1.queryTwoHandler(),
-    play.api.routing.HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.HomeController",
-      "queryTwoHandler",
-      Nil,
-      "GET",
-      this.prefix + """paperToMetadata""",
-      """""",
-      Seq()
-    )
-  )
-
-  // @LINE:24
-  private[this] lazy val controllers_Assets_at6_route = Route("GET",
+  // @LINE:20
+  private[this] lazy val controllers_Assets_at7_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_at6_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at7_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -184,45 +203,51 @@ class Routes(
   def routes: PartialFunction[RequestHeader, Handler] = {
   
     // @LINE:7
-    case controllers_HomeController_querySelectionHandler0_route(params@_) =>
+    case controllers_HomeController_index0_route(params@_) =>
       call { 
-        controllers_HomeController_querySelectionHandler0_invoker.call(HomeController_1.querySelectionHandler())
+        controllers_HomeController_index0_invoker.call(HomeController_1.index())
+      }
+  
+    // @LINE:8
+    case controllers_HomeController_topicSelection1_route(params@_) =>
+      call { 
+        controllers_HomeController_topicSelection1_invoker.call(HomeController_1.topicSelection())
       }
   
     // @LINE:9
-    case controllers_HomeController_query11_route(params@_) =>
+    case controllers_HomeController_paperSelection2_route(params@_) =>
       call { 
-        controllers_HomeController_query11_invoker.call(HomeController_1.query1())
+        controllers_HomeController_paperSelection2_invoker.call(HomeController_1.paperSelection())
       }
   
-    // @LINE:11
-    case controllers_HomeController_query22_route(params@_) =>
+    // @LINE:10
+    case controllers_HomeController_paperView13_route(params@_) =>
       call { 
-        controllers_HomeController_query22_invoker.call(HomeController_1.query2())
+        controllers_HomeController_paperView13_invoker.call(HomeController_1.paperView1())
+      }
+  
+    // @LINE:13
+    case controllers_HomeController_topicSelectionApi4_route(params@_) =>
+      call { 
+        controllers_HomeController_topicSelectionApi4_invoker.call(HomeController_1.topicSelectionApi())
+      }
+  
+    // @LINE:14
+    case controllers_HomeController_paperSelectionApi5_route(params@_) =>
+      call { 
+        controllers_HomeController_paperSelectionApi5_invoker.call(HomeController_1.paperSelectionApi())
       }
   
     // @LINE:15
-    case controllers_HomeController_querySelectionHandler3_route(params@_) =>
+    case controllers_HomeController_paperView26_route(params@_) =>
       call { 
-        controllers_HomeController_querySelectionHandler3_invoker.call(HomeController_1.querySelectionHandler())
+        controllers_HomeController_paperView26_invoker.call(HomeController_1.paperView2())
       }
   
-    // @LINE:17
-    case controllers_HomeController_queryOneHandler4_route(params@_) =>
-      call { 
-        controllers_HomeController_queryOneHandler4_invoker.call(HomeController_1.queryOneHandler())
-      }
-  
-    // @LINE:19
-    case controllers_HomeController_queryTwoHandler5_route(params@_) =>
-      call { 
-        controllers_HomeController_queryTwoHandler5_invoker.call(HomeController_1.queryTwoHandler())
-      }
-  
-    // @LINE:24
-    case controllers_Assets_at6_route(params@_) =>
+    // @LINE:20
+    case controllers_Assets_at7_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_at6_invoker.call(Assets_0.at(path, file))
+        controllers_Assets_at7_invoker.call(Assets_0.at(path, file))
       }
   }
 }

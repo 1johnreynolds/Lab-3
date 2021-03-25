@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/huasucaster/Desktop/CS Master/CS7340/Lab3/backend/conf/routes
-// @DATE:Tue Mar 23 12:48:52 CDT 2021
+// @SOURCE:/Users/huasucaster/Downloads/Lab-3/backend/conf/routes
+// @DATE:Thu Mar 25 00:43:24 CDT 2021
 
 package router
 
@@ -46,6 +46,8 @@ class Routes(
     ("""GET""", this.prefix, """controllers.HomeController.index"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """topicToPaper""", """controllers.AbstractController.FromTopicToPaper"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """paperToMetadata""", """controllers.AbstractController.FromPaperToMetadata"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """topicToPaperApi""", """controllers.AbstractController.FromTopicToPaperApi"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """paperToMetadataApi""", """controllers.AbstractController.FromPaperToMetadataApi"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -82,7 +84,7 @@ class Routes(
       "FromTopicToPaper",
       Nil,
       "POST",
-      """ An example controller showing a sample home page""",
+      """ Part 1""",
       this.prefix + """topicToPaper"""
     )
   )
@@ -101,6 +103,40 @@ class Routes(
       "POST",
       """""",
       this.prefix + """paperToMetadata"""
+    )
+  )
+
+  // @LINE:15
+  private[this] lazy val controllers_AbstractController_FromTopicToPaperApi3_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("topicToPaperApi")))
+  )
+  private[this] lazy val controllers_AbstractController_FromTopicToPaperApi3_invoker = createInvoker(
+    AbstractController_0.FromTopicToPaperApi,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.AbstractController",
+      "FromTopicToPaperApi",
+      Nil,
+      "POST",
+      """ Part 2""",
+      this.prefix + """topicToPaperApi"""
+    )
+  )
+
+  // @LINE:16
+  private[this] lazy val controllers_AbstractController_FromPaperToMetadataApi4_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("paperToMetadataApi")))
+  )
+  private[this] lazy val controllers_AbstractController_FromPaperToMetadataApi4_invoker = createInvoker(
+    AbstractController_0.FromPaperToMetadataApi,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.AbstractController",
+      "FromPaperToMetadataApi",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """paperToMetadataApi"""
     )
   )
 
@@ -123,6 +159,18 @@ class Routes(
     case controllers_AbstractController_FromPaperToMetadata2_route(params) =>
       call { 
         controllers_AbstractController_FromPaperToMetadata2_invoker.call(AbstractController_0.FromPaperToMetadata)
+      }
+  
+    // @LINE:15
+    case controllers_AbstractController_FromTopicToPaperApi3_route(params) =>
+      call { 
+        controllers_AbstractController_FromTopicToPaperApi3_invoker.call(AbstractController_0.FromTopicToPaperApi)
+      }
+  
+    // @LINE:16
+    case controllers_AbstractController_FromPaperToMetadataApi4_route(params) =>
+      call { 
+        controllers_AbstractController_FromPaperToMetadataApi4_invoker.call(AbstractController_0.FromPaperToMetadataApi)
       }
   }
 }

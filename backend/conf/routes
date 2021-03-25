@@ -7,9 +7,13 @@ GET     /                           controllers.HomeController.index
 
 
 
-# An example controller showing a sample home page
+# Part 1
 POST     /topicToPaper                    controllers.AbstractController.FromTopicToPaper
 POST     /paperToMetadata                    controllers.AbstractController.FromPaperToMetadata
+
+# Part 2
+POST     /topicToPaperApi                    controllers.AbstractController.FromTopicToPaperApi
+POST     /paperToMetadataApi                   controllers.AbstractController.FromPaperToMetadataApi
 
 
 

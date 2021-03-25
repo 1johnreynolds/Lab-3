@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="test-internal"
 		confs="universal, universal-docs, universal-src, compile, runtime, test, provided, optional, windows, docker, linux, web-assets, web-assets-test, web-plugin, rpm, debian, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20210323115521"/>
+		date="20210324215746"/>
 	<dependencies>
 		<module organisation="com.typesafe.play" name="play-ehcache_2.12">
 			<revision name="2.7.3" status="release" pubdate="20190619050345" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.7.3/api/scala/index.html" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="64">

@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/huasucaster/Desktop/CS Master/CS7340/Lab3/frontend/conf/routes
-// @DATE:Tue Mar 23 13:04:33 CDT 2021
+// @SOURCE:/Users/huasucaster/Downloads/Lab-3/frontend/conf/routes
+// @DATE:Thu Mar 25 00:41:12 CDT 2021
 
 import play.api.mvc.Call
 
@@ -18,54 +18,58 @@ package controllers {
     }
 
   
-    // @LINE:19
-    def queryTwoHandler(): Call = {
+    // @LINE:9
+    def paperSelection(): Call = {
       
-      Call("GET", _prefix + { _defaultPrefix } + "paperToMetadata")
+      Call("GET", _prefix + { _defaultPrefix } + "paperSelection")
+    }
+  
+    // @LINE:8
+    def topicSelection(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "topicSelection")
+    }
+  
+    // @LINE:13
+    def topicSelectionApi(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "topicSelectionApi")
+    }
+  
+    // @LINE:15
+    def paperView2(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "paperView2")
+    }
+  
+    // @LINE:14
+    def paperSelectionApi(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "paperSelectionApi")
+    }
+  
+    // @LINE:10
+    def paperView1(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "paperView1")
     }
   
     // @LINE:7
-    def querySelectionHandler(): Call = {
-    
-      () match {
+    def index(): Call = {
       
-        // @LINE:7
-        case ()  =>
-          
-          Call("GET", _prefix)
-      
-      }
-    
-    }
-  
-    // @LINE:11
-    def query2(): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "query2")
-    }
-  
-    // @LINE:9
-    def query1(): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "query1")
-    }
-  
-    // @LINE:17
-    def queryOneHandler(): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "topicToPaper")
+      Call("GET", _prefix)
     }
   
   }
 
-  // @LINE:24
+  // @LINE:20
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:24
+    // @LINE:20
     def at(file:String): Call = {
       implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public"))); _rrc
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[String]].unbind("file", file))

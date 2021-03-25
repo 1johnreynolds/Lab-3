@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/huasucaster/Desktop/CS Master/CS7340/Lab3/backend/conf/routes
-// @DATE:Tue Mar 23 12:48:52 CDT 2021
+// @SOURCE:/Users/huasucaster/Downloads/Lab-3/backend/conf/routes
+// @DATE:Thu Mar 25 00:43:24 CDT 2021
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -19,6 +19,18 @@ package controllers {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
+  
+    // @LINE:16
+    def FromPaperToMetadataApi(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "paperToMetadataApi")
+    }
+  
+    // @LINE:15
+    def FromTopicToPaperApi(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "topicToPaperApi")
+    }
   
     // @LINE:11
     def FromTopicToPaper(): Call = {

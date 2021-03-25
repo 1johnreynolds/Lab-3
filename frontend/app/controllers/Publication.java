@@ -13,6 +13,7 @@ public class Publication {
     private Long pid;
     private String title;
     public String mdate;
+
     public String pub_abstract;
     public String author;
     public String author_list;
@@ -37,6 +38,30 @@ public class Publication {
 
     public void setID(Long pid) {
         this.pid = pid;
+    }
+
+    public Long getPid() {
+        return pid;
+    }
+
+    public void setPid(Long pid) {
+        this.pid = pid;
+    }
+
+    public String getMdate() {
+        return mdate;
+    }
+
+    public void setMdate(String mdate) {
+        this.mdate = mdate;
+    }
+
+    public String getPub_abstract() {
+        return pub_abstract;
+    }
+
+    public void setPub_abstract(String pub_abstract) {
+        this.pub_abstract = pub_abstract;
     }
 
     public String getTitle() {
@@ -178,6 +203,19 @@ public class Publication {
     public CompletionStage<WSResponse> checkAuthorizedpapertometadata() {
         WSClient ws = play.test.WSTestClient.newClient(9005);
         WSRequest request = ws.url("http://localhost:9005/paperToMetadata");
+        ObjectNode res = Json.newObject();
+        res.put("title", this.title);
+
+        return request.addHeader("Content-Type", "application/json")
+                .post(res)
+                .thenApply((WSResponse r) -> {
+                    return r;
+                });
+    }
+
+    public CompletionStage<WSResponse> checkAuthorizedpapertometadataApi() {
+        WSClient ws = play.test.WSTestClient.newClient(9005);
+        WSRequest request = ws.url("http://localhost:9005/paperToMetadataApi");
         ObjectNode res = Json.newObject();
         res.put("title", this.title);
 

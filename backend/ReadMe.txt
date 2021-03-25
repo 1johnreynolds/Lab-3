@@ -47,9 +47,18 @@ Now you are ready to insert the data from the mysqldump provided into mysql data
     1. Input command: mysql -h localhost -uroot -p -D CS7340TEAMONELABTHREE <./pub_infoLab3.sql
     2. Input command: mysql -h localhost -uroot -p -D DatabaseName <./auth_info.sql
     3. Input command: mysql -h localhost -uroot -p -D DatabaseName <./conference_data.sql
-    $mysqldump -uroot -p CS7340TEAMONELABTHREE pub_info> './pub_info.sql'
-    $mysqldump -uroot -p CS7340TEAMONELABTHREE topicwithtitle> './topicwithtitle.sql'
+    $
+
+    mysqldump -uroot -p CS7340TEAMONELABTHREE topicwithtitle> './topicwithtitle.sql'
+    mysqldump -uroot -p CS7340TEAMONELABTHREE topicwithtitleapi> './topicwithtitleapi.sql'
+    mysqldump -uroot -p CS7340TEAMONELABTHREE pub_info> './pub_info.sql'
+    mysqldump -uroot -p CS7340TEAMONELABTHREE pub_infoapi> './pub_infoapi.sql'
+    mysqldump -uroot -p CS7340TEAMONELABTHREE > './allDataForLab3.sql'
     mysql -h localhost -uroot -p -D CS7340TEAMONELABTHREE <./pub_info.sql
+    mysql -h localhost -uroot -p -D CS7340TEAMONELABTHREE <./pub_infoapi.sql
+    mysql -h localhost -uroot -p -D CS7340TEAMONELABTHREE <./topicwithtitle.sql
+    mysql -h localhost -uroot -p -D CS7340TEAMONELABTHREE <./topicwithtitleapi.sql
+    mysql -h localhost -uroot -p -D CS7340TEAMONELABTHREE <./allDataForLab3.sql
 
     Note: DatabaseName should be replaced by the name of the database you have active that you want to insert the data
     into. You will be asked to enter the password associated with the root user as well.

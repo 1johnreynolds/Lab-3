@@ -1,0 +1,4 @@
+[debug] Copy resource mappings: 
+[debug] 	(/Users/huasucaster/Downloads/Lab-3/frontend/conf/logback.xml,/Users/huasucaster/Downloads/Lab-3/frontend/target/scala-2.12/classes/logback.xml)
+[debug] 	(/Users/huasucaster/Downloads/Lab-3/frontend/conf/application.conf,/Users/huasucaster/Downloads/Lab-3/frontend/target/scala-2.12/classes/application.conf)
+[debug] 	(/Users/huasucaster/Downloads/Lab-3/frontend/conf/routes,/Users/huasucaster/Downloads/Lab-3/frontend/target/scala-2.12/classes/routes)

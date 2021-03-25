@@ -1,7 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f949c2c9-5f2c-4fdb-9b16-ea12495995e7" name="Default Changelist" comment="" />
+    <list default="true" id="72ce8270-39f3-477d-a301-7245855f5d11" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../backend/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/index.scala.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/paperSelectionApi.scala.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/paperView2.scala.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/topicSelectionApi.scala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/.idea/modules/ebean-backend-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/modules/ebean-backend-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/.idea/modules/ebean-backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/modules/ebean-backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/.idea/play2_project_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/play2_project_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/.idea/play2_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/play2_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/scala_compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/ReadMe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/ReadMe.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/app/controllers/AbstractController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/app/controllers/AbstractController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/app/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/app/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/app/models/pub_info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/app/models/pub_info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/app/models/topicwithtitle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/app/models/topicwithtitle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/conf/evolutions/default/1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/conf/evolutions/default/1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/conf/routes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/lib/pub_info.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/lib/pub_info.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/logs/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/ebean-backend/ebean-backend$sources_2.11/1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/ebean-backend/ebean-backend$sources_2.11/1.0-SNAPSHOT/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/ebean-backend/ebean-backend$sources_2.11/1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/ebean-backend/ebean-backend$sources_2.11/1.0-SNAPSHOT/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/ebean-backend/ebean-backend_2.11/1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/ebean-backend/ebean-backend_2.11/1.0-SNAPSHOT/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/ebean-backend/ebean-backend_2.11/1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/ebean-backend/ebean-backend_2.11/1.0-SNAPSHOT/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-compile-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-compile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-docs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-docs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-optional.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-provided.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-runtime-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-runtime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-scala-tool.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-sources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-sources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-test-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend$sources_2.11-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-compile-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-compile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-docs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-docs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-optional.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-provided.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-runtime-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-runtime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-scala-tool.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-sources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-sources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-test-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/resolution-cache/reports/ebean-backend-ebean-backend_2.11-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/routes/main/controllers/routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/routes/main/controllers/routes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/routes/main/router/Routes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/routes/main/router/Routes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/routes/main/router/RoutesPrefix.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/routes/main/router/RoutesPrefix.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/scala-2.11/twirl/main/views/html/index.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/target/scala-2.11/twirl/main/views/html/index.template.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/client-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/client-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/play2_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/play2_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/Publication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Publication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/topicwithtitle.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/topicwithtitle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/gson-2.8.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/HttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/HttpUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/query1.scala.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/query2.scala.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/querySelection.scala.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client$sbt_2.10/1.0/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client$sbt_2.10/1.0/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client$sbt_2.10/1.0/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client$sbt_2.10/1.0/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client$sources_2.10/1.0/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client$sources_2.10/1.0/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client$sources_2.10/1.0/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client$sources_2.10/1.0/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client$sources_2.12/1.0/resolved.xml 2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client$sources_2.12/1.0/resolved.xml 2.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client$sources_2.12/1.0/resolved.xml 2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client$sources_2.12/1.0/resolved.xml 2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client$sources_2.12/1.0/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client$sources_2.12/1.0/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client$sources_2.12/1.0/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client$sources_2.12/1.0/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client_2.12/1.0/resolved.xml 2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client_2.12/1.0/resolved.xml 2.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client_2.12/1.0/resolved.xml 2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client_2.12/1.0/resolved.xml 2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client_2.12/1.0/resolved.xml 3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client_2.12/1.0/resolved.xml 3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client_2.12/1.0/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client_2.12/1.0/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client_2.12/1.0/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/client/client_2.12/1.0/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/org.scala-sbt.temp/temp-module-750703454be73072ce64f1c215ff85550284ae5b/0.13.17/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/org.scala-sbt.temp/temp-module-750703454be73072ce64f1c215ff85550284ae5b/0.13.17/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/org.scala-sbt.temp/temp-module-750703454be73072ce64f1c215ff85550284ae5b/0.13.17/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/org.scala-sbt.temp/temp-module-750703454be73072ce64f1c215ff85550284ae5b/0.13.17/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/org.scala-sbt.temp/temp-module-750703454be73072ce64f1c215ff85550284ae5b/0.13.18/resolved.xml.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/org.scala-sbt.temp/temp-module-750703454be73072ce64f1c215ff85550284ae5b/0.13.18/resolved.xml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sbt_2.10-default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sbt_2.10-default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.10-default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.10-default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-compile-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-compile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-debian.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-debian.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-docker.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-docker.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-docs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-docs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-linux.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-linux.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-optional.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-provided.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-rpm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-rpm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-runtime-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-runtime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-scala-tool.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-sources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-sources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-test-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-universal-docs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-universal-docs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-universal-src.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-universal-src.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-universal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-universal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-web-assets-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-web-assets-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-web-assets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-web-assets.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-web-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-web-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-windows.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client$sources_2.12-windows.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-compile-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-compile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-debian.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-debian.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-docker.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-docker.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-docs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-docs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-linux.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-linux.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-optional.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-provided.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-rpm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-rpm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-runtime-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-runtime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-scala-tool.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-sources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-sources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-test-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-universal-docs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-universal-docs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-universal-src.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-universal-src.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-universal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-universal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-web-assets-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-web-assets-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-web-assets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-web-assets.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-web-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-web-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-windows.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/client-client_2.12-windows.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/org.scala-sbt.temp-temp-module-750703454be73072ce64f1c215ff85550284ae5b-component.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/org.scala-sbt.temp-temp-module-750703454be73072ce64f1c215ff85550284ae5b-component.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/routes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/Routes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/Routes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/RoutesPrefix.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/RoutesPrefix.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/query1.template 2.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/query1.template.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/query2.template.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/query3.template 2.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/query4.template 2.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/query5.template 2.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/querySelection.template 2.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/querySelection.template.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/response.template 2.scala" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,13 +172,8 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="HTML File" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="Play2ProjectSettings">
     <option name="LANGUAGE_IMPORTS">
@@ -31,8 +183,8 @@
         <option value="java.lang._" />
         <option value="play.mvc._" />
         <option value="_root_.play.twirl.api.Txt" />
-        <option value="play.data._" />
         <option value="play.api.data.Field" />
+        <option value="play.data._" />
         <option value="play.api.templates.PlayMagic._" />
         <option value="_root_.play.twirl.api.JavaScript" />
         <option value="play.core.j.PlayMagicForJava._" />
@@ -48,47 +200,27 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectId" id="1pSdyMWvbBt2J4bre0AH3Gu1R9D" />
+  <component name="ProjectId" id="1qENdpLV8zo4KEWokwyTVzVRouh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration default="true" type="Play2FrameworkRunConfigurations" factoryName="Play 2 App" show_console_on_std_err="false" show_console_on_std_out="false">
-      <option name="allowRunningInParallel" value="false" />
-      <option name="enableSbtGlobalPlugins" value="false" />
-      <option name="play2EnvVariables">
-        <map />
-      </option>
-      <option name="play2IsNonDefaultInstallDirUsed" value="false" />
-      <option name="play2JpdaPort" value="9999" />
-      <option name="play2JvmOptions">
-        <array>
-          <option value="-Xms512M" />
-          <option value="-Xmx1024M" />
-          <option value="-Xss1M" />
-          <option value="-XX:+CMSClassUnloadingEnabled" />
-          <option value="-XX:MaxPermSize=256M" />
-        </array>
-      </option>
-      <option name="play2NeedOpenInBrowser" value="true" />
-      <option name="play2NonDefaultInstallDir" value="" />
-      <option name="play2OpenUrl" value="http://localhost:9001" />
-      <option name="play2isAutoReloadEnabled" value="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="frontend" type="Play2FrameworkRunConfigurations" factoryName="Play 2 App" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="Frontend" type="Play2FrameworkRunConfigurations" factoryName="Play 2 App" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="client" />
       <option name="allowRunningInParallel" value="false" />
       <option name="enableSbtGlobalPlugins" value="false" />
@@ -128,7 +260,7 @@
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="client [file:/Users/huasucaster/Downloads/CS7340-Lab2-Team1/Lab-2-frontend/]" />
+                <option name="name" value="client [file:/Users/huasucaster/Downloads/Lab-3/frontend/]" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
@@ -142,7 +274,6 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4845391730000" />
         <entry key="$PROJECT_DIR$/build.sbt" value="1913583045" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="934637055" />
         <entry key="$PROJECT_DIR$/project/plugins.sbt" value="2061145994" />
@@ -150,20 +281,25 @@
     </option>
     <option name="projectSyncType">
       <map>
+        <entry key="$USER_HOME$/Desktop/CS Master/CS7340/Lab2/Lab-2-backend" value="PREVIEW" />
+        <entry key="$USER_HOME$/Desktop/CS Master/CS7340/Lab2/Lab-2-frontend" value="PREVIEW" />
+        <entry key="$USER_HOME$/Desktop/CS Master/CS7340/Lab2/Lab2/backend/Lab-2-backend" value="PREVIEW" />
+        <entry key="$USER_HOME$/Desktop/CS Master/CS7340/Lab2/Lab2/frontend/Lab-2-frontend" value="PREVIEW" />
+        <entry key="$USER_HOME$/Desktop/CS Master/CS7340/Lab3/backend" value="PREVIEW" />
+        <entry key="$USER_HOME$/Desktop/CS Master/CS7340/Lab3/frontend" value="PREVIEW" />
+        <entry key="$USER_HOME$/Desktop/Lab-2-backend-beichenh" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../../CS57-340-Lab2-Team1/Lab-2-backend" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../../CS57-340-Lab2-Team1/Lab-2-frontend" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../CS7340-Lab2-Team1/Lab-2-backend" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../CS7340-Lab2-Team1/Lab-2-frontend" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../../Lab-2-Ebean 3/Frontend" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../../Lab-2-Ebean/Frontend" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../../Lab-2-backend-beichenh" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../../Lab-2-backend-master" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../../Lab-2-frontend-beichenh" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../Lab2/Lab-2-backend" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../Lab2/Lab-2-frontend" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../Lab2/Lab2/backend/Lab-2-backend" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../Lab2/Lab2/frontend/Lab-2-frontend" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../Lab-2-backend" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../backend" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../../SOSE Lab-2 Play Frontend-Backend/Frontend" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../../../Lab-2-backend-beichenh" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../backend" value="PREVIEW" />
       </map>
     </option>
   </component>
@@ -172,14 +308,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f949c2c9-5f2c-4fdb-9b16-ea12495995e7" name="Default Changelist" comment="" />
-      <created>1615180678887</created>
+      <changelist id="72ce8270-39f3-477d-a301-7245855f5d11" name="Default Changelist" comment="" />
+      <created>1616640879040</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1615180678887</updated>
-      <workItem from="1615180680496" duration="927000" />
-      <workItem from="1615593949668" duration="434000" />
-      <workItem from="1616517274563" duration="3626000" />
+      <updated>1616640879040</updated>
+      <workItem from="1616640880742" duration="11059000" />
     </task>
     <servers />
   </component>
@@ -187,34 +321,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="339" y="167" width="868" height="635" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616518509947">
+    <state x="232" y="136" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616641054031">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="385" y="-872" width="1085" height="688" key="#com.intellij.execution.impl.EditConfigurationsDialog/-39.-1055.1920.1055/0.25.1536.935@-39.-1055.1920.1055" timestamp="1615180893655" />
-    <state x="339" y="167" width="868" height="635" key="#com.intellij.execution.impl.EditConfigurationsDialog/-39.-1080.1920.1080/0.0.1536.960@0.0.1536.960" timestamp="1616518509947" />
-    <state x="537" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1616518194614">
+    <state x="232" y="136" key="#com.intellij.execution.impl.EditConfigurationsDialog/-39.-1080.1920.1080/0.0.1536.960@0.0.1536.960" timestamp="1616641054031" />
+    <state width="1484" height="428" key="GridCell.Tab.0.bottom" timestamp="1616653890959">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state x="537" y="100" key="#com.intellij.ide.util.MemberChooser/-39.-1080.1920.1080/0.0.1536.960@0.0.1536.960" timestamp="1616518194614" />
-    <state width="1484" height="3" key="GridCell.Tab.0.bottom" timestamp="1616522620244">
+    <state width="1484" height="428" key="GridCell.Tab.0.bottom/-39.-1080.1920.1080/0.0.1536.960@0.0.1536.960" timestamp="1616653890959" />
+    <state width="1484" height="428" key="GridCell.Tab.0.center" timestamp="1616653890956">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state width="1868" height="274" key="GridCell.Tab.0.bottom/-39.-1055.1920.1055/0.25.1536.935@-39.-1055.1920.1055" timestamp="1615182988812" />
-    <state width="1484" height="3" key="GridCell.Tab.0.bottom/-39.-1080.1920.1080/0.0.1536.960@0.0.1536.960" timestamp="1616522620244" />
-    <state width="1484" height="3" key="GridCell.Tab.0.center" timestamp="1616522620238">
+    <state width="1484" height="428" key="GridCell.Tab.0.center/-39.-1080.1920.1080/0.0.1536.960@0.0.1536.960" timestamp="1616653890956" />
+    <state width="1484" height="428" key="GridCell.Tab.0.left" timestamp="1616653890954">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state width="1868" height="274" key="GridCell.Tab.0.center/-39.-1055.1920.1055/0.25.1536.935@-39.-1055.1920.1055" timestamp="1615182988811" />
-    <state width="1484" height="3" key="GridCell.Tab.0.center/-39.-1080.1920.1080/0.0.1536.960@0.0.1536.960" timestamp="1616522620237" />
-    <state width="1484" height="3" key="GridCell.Tab.0.left" timestamp="1616522620234">
+    <state width="1484" height="428" key="GridCell.Tab.0.left/-39.-1080.1920.1080/0.0.1536.960@0.0.1536.960" timestamp="1616653890954" />
+    <state width="1484" height="428" key="GridCell.Tab.0.right" timestamp="1616653890957">
       <screen x="0" y="0" width="1536" height="960" />
     </state>
-    <state width="1868" height="274" key="GridCell.Tab.0.left/-39.-1055.1920.1055/0.25.1536.935@-39.-1055.1920.1055" timestamp="1615182988811" />
-    <state width="1484" height="3" key="GridCell.Tab.0.left/-39.-1080.1920.1080/0.0.1536.960@0.0.1536.960" timestamp="1616522620234" />
-    <state width="1484" height="3" key="GridCell.Tab.0.right" timestamp="1616522620242">
-      <screen x="0" y="0" width="1536" height="960" />
-    </state>
-    <state width="1868" height="274" key="GridCell.Tab.0.right/-39.-1055.1920.1055/0.25.1536.935@-39.-1055.1920.1055" timestamp="1615182988812" />
-    <state width="1484" height="3" key="GridCell.Tab.0.right/-39.-1080.1920.1080/0.0.1536.960@0.0.1536.960" timestamp="1616522620242" />
+    <state width="1484" height="428" key="GridCell.Tab.0.right/-39.-1080.1920.1080/0.0.1536.960@0.0.1536.960" timestamp="1616653890957" />
   </component>
 </project>

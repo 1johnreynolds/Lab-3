@@ -65,4 +65,19 @@ public class topicwithtitle {
                     return r;
                 });
     }
+
+    public CompletionStage<WSResponse> checkAuthorizedtopictopaperApi() {
+
+        WSClient ws = play.test.WSTestClient.newClient(9005);
+        WSRequest request = ws.url("http://localhost:9005/topicToPaperApi ");
+        ObjectNode res = Json.newObject();
+        res.put("topic", this.topic);
+        System.out.println(res);
+
+        return request.addHeader("Content-Type", "application/json")
+                .post(res)
+                .thenApply((WSResponse r) -> {
+                    return r;
+                });
+    }
 }

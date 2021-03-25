@@ -26,10 +26,10 @@ public class pub_info {
     public String mdate;
 
     @Column(columnDefinition = "VARCHAR(100)NOT NULL DEFAULT ''")
-    public String author;
+    public String authors;
 
-    @Column(columnDefinition = "VARCHAR(150)NOT NULL DEFAULT ''")
-    public String author_list;
+//    @Column(columnDefinition = "VARCHAR(150)NOT NULL DEFAULT ''")
+//    public String author_list;
 
     @Column(columnDefinition = "VARCHAR(100) NOT NULL DEFAULT ''")
     public String article_key;
@@ -106,7 +106,7 @@ public class pub_info {
     public static List<SqlRow> getMetadata(String title){
         try{
             List<SqlRow> queryFindTitle = Ebean.createSqlQuery("SELECT * FROM pub_info " +
-                    "where title='"+replacePunctuation(title)+"';")
+                    "where title like'"+replacePunctuation(title)+"';")
                     .findList();
             return queryFindTitle;
         }catch(Exception e){

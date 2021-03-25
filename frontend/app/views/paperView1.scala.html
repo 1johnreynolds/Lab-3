@@ -1,0 +1,120 @@
+@(q1Metadata:List[List[String]])
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Lab 3 Paper Selection</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+            <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    </head>
+    <body>
+
+        <header class="topbar">
+            <h1 class="focused" style="font-size: 37px;
+                color: black">
+                <strong>Lab 3 Paper View</strong>
+            </h1>
+            <h6><a href="@routes.HomeController.topicSelection()">  <- return to topic Selection</a></h6>
+        </header>
+        <div class="row" >
+            <div class="card col s3 " >
+                <div class="card-panel"  style="width: 120rem;">
+                    <table border="1" >
+                        <tr>
+                            <th>Attribute</th>
+                            <th>Value</th>
+                        </tr>
+
+                        @for(paperMetadata <- q1Metadata){
+                        <tr>
+                            <td>ID</td>
+                            <td>@paperMetadata.get(0)</td>
+                        </tr>
+                        <tr>
+                            <td>Title</td>
+                            <td>@paperMetadata.get(1)</td>
+                        </tr>
+                        <tr>
+                            <td>Mdate</td>
+                            <td>@paperMetadata.get(2)</td>
+                        </tr>
+                        <tr>
+                            <td>Authors</td>
+                            <td>@paperMetadata.get(3)</td>
+                        </tr>
+                        <tr>
+                            <td>Abstract</td>
+                            <td>@paperMetadata.get(18)</td>
+                        </tr>
+                        <tr>
+                            <td>Article Key</td>
+                            <td>@paperMetadata.get(4)</td>
+                        </tr>
+                        <tr>
+                            <td>Editors</td>
+                            <td>@paperMetadata.get(5)</td>
+                        </tr>
+                        <tr>
+                            <td>Pages</td>
+                            <td>@paperMetadata.get(6)</td>
+                        </tr>
+                        <tr>
+                            <td>EE</td>
+                            <td>@paperMetadata.get(7)</td>
+                        </tr>
+                        <tr>
+                            <td>URL</td>
+                            <td>@paperMetadata.get(8)</td>
+                        </tr>
+                        <tr>
+                            <td>Pub_year</td>
+                            <td>@paperMetadata.get(9)</td>
+                        </tr>
+                        <tr>
+                            <td>Journal</td>
+                            <td>@paperMetadata.get(10)</td>
+                        </tr>
+                        <tr>
+                            <td>Book_title</td>
+                            <td>@paperMetadata.get(11)</td>
+                        </tr>
+                        <tr>
+                            <td>Volume</td>
+                            <td>@paperMetadata.get(12)</td>
+                        </tr>
+                        <tr>
+                            <td>Pub_number</td>
+                            <td>@paperMetadata.get(13)</td>
+                        </tr>
+                        <tr>
+                            <td>Publisher</td>
+                            <td>@paperMetadata.get(14)</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN</td>
+                            <td>@paperMetadata.get(15)</td>
+                        </tr>
+                        <tr>
+                            <td>Series</td>
+                            <td>@paperMetadata.get(16)</td>
+                        </tr>
+                        <tr>
+                            <td>Cross_ref</td>
+                            <td>@paperMetadata.get(17)</td>
+                        </tr>
+
+                        }
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

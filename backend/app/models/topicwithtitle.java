@@ -27,8 +27,6 @@ public class topicwithtitle {
     public String distribution;
 
 
-
-
     /**
      * MySQL query that is utilized for retrieving the title from specific title, returns the name of Title.
      * @return

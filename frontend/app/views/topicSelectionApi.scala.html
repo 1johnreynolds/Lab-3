@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Lab 3 Topic Selection</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+            <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    </head>
+    <body>
+
+        <header class="topbar">
+            <h1 class="focused" style="font-size: 37px;
+                color: black">
+                <strong>Lab 3 Topic Selection</strong>
+                <h6><a href="@routes.HomeController.index()">  <- return to Homepage</a></h6>
+            </h1>
+        </header>
+        <div class="row">
+            <div class="card col s3 ">
+                <div class="card-panel">
+                    <table border="1">
+                        <th>
+                        <form action="@routes.HomeController.paperSelectionApi()" method="GET">
+                            <button name="topic" type="submit" value="Topic1">Topic 1</button>
+                        </form>
+                        </th>
+                        <tr>
+                            <th>
+                                <form action="@routes.HomeController.paperSelectionApi()" method="GET">
+                                    <button name="topic" type="submit" value="Topic2">Topic 2</button>
+                                </form>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <form action="@routes.HomeController.paperSelectionApi()" method="GET">
+                                    <button name="topic" type="submit" value="Topic3">Topic 3</button>
+                                </form>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <form action="@routes.HomeController.paperSelectionApi()" method="GET">
+                                    <button name="topic" type="submit" value="Topic4">Topic 4</button>
+                                </form>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <form action="@routes.HomeController.paperSelectionApi()" method="GET">
+                                    <button name="topic" type="submit" value="Topic5">Topic 5</button>
+                                </form>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <form action="@routes.HomeController.paperSelectionApi()" method="GET">
+                                    <button name="topic" type="submit" value="Topic6">Topic 6</button>
+                                </form>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <form action="@routes.HomeController.paperSelectionApi()" method="GET">
+                                    <button name="topic" type="submit" value="Topic7">Topic 7</button>
+                                </form>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <form action="@routes.HomeController.paperSelectionApi()" method="GET">
+                                    <button name="topic" type="submit" value="Topic8">Topic 8</button>
+                                </form>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <form action="@routes.HomeController.paperSelectionApi()" method="GET">
+                                    <button name="topic" type="submit" value="Topic9">Topic 9</button>
+                                </form>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <form action="@routes.HomeController.paperSelectionApi()" method="GET">
+                                    <button name="topic" type="submit" value="Topic10">Topic 10</button>
+                                </form>
+                            </th>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+@*<a href="@routes.HomeController.paperView1()"> Topic </a>*@
+

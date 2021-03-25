@@ -50,8 +50,8 @@ Seq[Any](format.raw/*1.1*/("""<h1>Welcome to Play!</h1>
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Mon Mar 22 00:47:13 CDT 2021
-                  SOURCE: /Users/huasucaster/Desktop/CS Master/CS7340/Lab3/backend/app/views/index.scala.html
+                  DATE: Wed Mar 24 21:58:45 CDT 2021
+                  SOURCE: /Users/huasucaster/Downloads/Lab-3/backend/app/views/index.scala.html
                   HASH: 498ee37aa93673aff7099990a49165910e8e787e
                   MATRIX: 827->0
                   LINES: 32->1
